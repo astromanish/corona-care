@@ -47,6 +47,12 @@ img{
 
 /* Main Styling */
 
+.container{
+    max-width: 900px;
+    width: 95%;
+    margin: 2em auto;
+}
+
 main{
     height: 100vh;
 }
