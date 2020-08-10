@@ -14,7 +14,6 @@ img{
 .navbar{
     display: flex;
     position: relative;
-    justify-content: space-around;
 }
 
 .navbar-logo{
@@ -34,7 +33,6 @@ img{
     width: 70%;
 }
 
-
 .navbar-link{
     text-decoration: none;
     color:gray;
@@ -44,15 +42,31 @@ img{
     color: red;
 }
 
+/* footer styling */
+
+footer{
+    position: relative;
+}
+
+.footer-info{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25em 1em;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+
 
 
 @media (max-width:500px){   
-
-
-    .navbar-logo{
-        position: absolute;
-        left: 5%;
-    }
     
     .hamburger{
         position: absolute;
@@ -113,6 +127,14 @@ img{
 
     .navbar-link{
         color: white;
+    }
+
+
+    /* Footer Styling */
+
+    .footer-info{
+        flex-direction: column;
+        height: 60vh;
     }
     
 }
