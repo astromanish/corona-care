@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*Navbar Styling*/
+
+.navbar{
+    display: flex;
+    position: relative;
+    background-color: white ;
+    position: sticky;
+    top:0;
+}
+
+.navbar-logo{
+    width: 30%;
+}
+
+.navbar-logo img{
+    width: 200px;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 1.25rem;
+    width: 70%;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color:gray;
+}
+
+.navbar-link:hover{
+    color: red;
+}
+
+/* Main Styling */
+
+.container{
+    max-width: 900px;
+    width: 95%;
+    margin: 2em auto;
+}
+
+main{
+    display: grid;
+    /* grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; */
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: "manish divyansh"
+    "vikas amogh";
+    align-content: space-between;
+    justify-content: center;
+}
+
+.contri-item{
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+}
+
+.manish{
+    grid-area: manish;
+    background-color: red;
+}
+
+.divyansh{
+    grid-area: divyansh;
+    background-color: violet;
+}
+
+.vikas{
+    grid-area: vikas;
+    background-color: tomato;
+}
+
+.amogh{
+    grid-area: amogh;
+    background-color: turquoise;
+}
+
+
+/* Footer styling */
+
+footer{
+    position: relative;
+}
+
+.footer-info{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25em 2.5em;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-copyright{
+    text-align: center;
+    padding: 0.8em;
+}
+
+
+
+@media (max-width:500px){   
+
+    /* Navbar Styling */
+    
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right:10%;
+        top: 12px;
+        z-index: 3;
+    }
+    
+    
+    .line1,.line2,.line3{
+        background-color:black;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        border-radius: 3.2px;
+    }
+    
+    .navbar-list{
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+        margin: 0;
+        padding: 0;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        clip-path: circle(0px at 86% 5%);
+        -webkit-clip-path: circle(0px at 86% 5%);
+        transition: all 900ms ease-out;
+        font-size: 2rem;
+        z-index: 2;
+    }
+    
+    .nav-open .navbar-list{
+        clip-path: circle(2000px at 86% 0%);
+        -webkit-clip-path: circle(2000px at 86% 0%);
+    }
+    
+    .nav-open .line1{
+        transform: rotate(45deg);
+        background-color: red;
+    
+    }
+    
+    .nav-open .line2{
+        display: none;
+    }
+    
+    .nav-open .line3{
+        transform: rotate(-45deg);
+        background-color: red;
+        
+    }
+
+    .navbar-link{
+        color: white;
+    }
+
+    /* Main Styling */
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "manish"
+        "divyansh"
+        "vikas"
+        "amogh";
+    }
+
+
+    /* Footer Styling */
+
+    .footer-info{
+        flex-direction: column;
+        height: 60vh;
+    }
+    
+}
