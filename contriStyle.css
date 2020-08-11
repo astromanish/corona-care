@@ -67,41 +67,71 @@ h3{
 
 main{
     display: grid;
-    /* grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
     grid-template-areas: "manish divyansh"
     "vikas amogh";
-    align-content: space-between;
-    justify-content: center;
 }
 
 .contri-item{
     border-radius: 10%;
     width: 300px;
-    height: 300px;
+    height: 200px;
     justify-self: center;
+    border: 2px solid gray;
+    position: relative;
+}
+
+.contri-item img{
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 55%;
+}
+
+.contri-item-nametag{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.contri-item-name{
+    color: black;
+}
+
+.contri-item-connect{
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+}
+
+.contri-item-connect a{
+    font-size: 25px;
+    padding-left: 0.3em;
+    color: gray;
+}
+
+.contri-item-connect a:hover{
+    color: red;
 }
 
 .manish{
     grid-area: manish;
-    background-color: red;
 }
 
 .divyansh{
     grid-area: divyansh;
-    background-color: violet;
 }
 
 .vikas{
     grid-area: vikas;
-    background-color: tomato;
 }
 
 .amogh{
     grid-area: amogh;
-    background-color: turquoise;
 }
 
 
