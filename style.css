@@ -79,6 +79,7 @@ footer{
     color: white;
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.35rem;
     padding: 1.5em 2.5em;
 }
 
@@ -163,7 +164,7 @@ footer{
 
     .footer-info{
         flex-direction: column;
-        height: 75vh;
+        height: 95vh;
     }
     
 }
