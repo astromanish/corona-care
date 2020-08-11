@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: gray;
+}
+
 img{
     max-width: 100%;
     display: block;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.25em;
 }
 
 /*Navbar Styling*/
@@ -17,6 +27,7 @@ img{
     background-color: white ;
     position: sticky;
     top:0;
+    z-index: 100;
 }
 
 .navbar-logo{
@@ -39,6 +50,7 @@ img{
 .navbar-link{
     text-decoration: none;
     color:gray;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-link:hover{
@@ -100,7 +112,7 @@ footer{
 }
 
 .footer-info{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.93);
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -144,7 +156,7 @@ footer{
         position: absolute;
         height: 100vh;
         width: 100%;
-        background-color: rgba(0,0,0,0.8);
+        background-color: black;
         margin: 0;
         padding: 0;
         top:0;
@@ -199,7 +211,7 @@ footer{
 
     .footer-info{
         flex-direction: column;
-        height: 60vh;
+        height: 75vh;
     }
     
 }
