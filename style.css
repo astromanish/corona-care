@@ -16,7 +16,7 @@ img{
 
 h3{
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.25em;
 }
 
 /*Navbar Styling*/
@@ -163,7 +163,7 @@ footer{
 
     .footer-info{
         flex-direction: column;
-        height: 90vh;
+        height: 75vh;
     }
     
 }
