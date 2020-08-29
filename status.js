@@ -15,6 +15,8 @@ const getData = () => {
 
 const showData = (data) => {
     console.log(data)
+    document.querySelector("#loading1").remove();
+    document.querySelector("#loading2").remove();
 
     const arrayRegions = Object.entries(data.data.regions);
     const tbodyCountry = document.querySelector("#table-country-body");
