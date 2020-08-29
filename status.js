@@ -42,8 +42,6 @@ const showData = (data) => {
     })
 
     const row1 = document.createElement("tr");
-    const col8 = document.createElement("td");
-    col8.appendChild(document.createTextNode(data.data.summary.tested));
     const col5 = document.createElement("td");
     col5.appendChild(document.createTextNode(data.data.summary.total_cases));
     const col6 = document.createElement("td");
@@ -52,7 +50,6 @@ const showData = (data) => {
     const col7 = document.createElement("td");
     col7.className = "text-danger";
     col7.appendChild(document.createTextNode(data.data.summary.deaths));
-    row1.appendChild(col8);
     row1.appendChild(col5);
     row1.appendChild(col6);
     row1.appendChild(col7);
