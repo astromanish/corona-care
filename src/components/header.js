@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import './css/navbar.css';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './css/header.css';
 import logo from './img/logo1.jpg';
 
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand>Corona Info</Navbar.Brand>
+        <Navbar bg="white" expand="lg" sticky="top">
+            <Navbar.Brand><img src={logo} alt="site logo" className="logo" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+            <Navbar.Collapse id="basic-navbar-nav" className="nav">
+                <Nav className="mr-auto nav-list">
                     <Nav.Link><Link to="/home">Home</Link></Nav.Link>
                     <NavDropdown title="Status" id="basic-nav-dropdown">
                         <NavDropdown.Item><Link to="/status">World</Link></NavDropdown.Item>

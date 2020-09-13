@@ -40,57 +40,57 @@ class DistrictData extends Component {
 
         return (
             <>
-            <DistrictDaily value= {this.state.stateName} />
-            <div className="stateData">
-                <table id="middle-table">
-                    <thead>
-                        <tr>
-                            <th>District</th>
-                            <th>Confirmed</th>
-                            <th>Active</th>
-                            <th>Recovered</th>
-                            <th>Deaths</th>
-                        </tr>
-                    </thead>
-                    {
-                        this.state.names.map(dist => {
-                            return (
-                                <tbody key={dist[0]}>
-                                    <tr>
-                                        <td id="statename">{dist[0]}</td>
-                                        <td id="confirmed">
-                                            <div>
-                                                <span><NumberFormat value={dist[1].confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    dist[1].delta.confirmed > 0 && <span>+<NumberFormat value={dist[1].delta.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>    
-                                        <td id="active"><NumberFormat value={dist[1].active} displayType={'text'} thousandSeparator={true} /> </td>
-                                        <td id="recovered">
-                                            <div>
-                                                <span><NumberFormat value={dist[1].recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    dist[1].delta.recovered > 0 && <span>+<NumberFormat value={dist[1].delta.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>
-                                        <td id="deaths">
-                                            <div>
-                                                <span><NumberFormat value={dist[1].deceased} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    dist[1].delta.deceased > 0 && <span>+<NumberFormat value={dist[1].delta.deceased} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            );
-                        })
-                    }
-                </table>
-            </div>
-            <hr/>
+                <DistrictDaily value={this.state.stateName} />
+                <div className="stateData">
+                    <table id="middle-table">
+                        <thead>
+                            <tr>
+                                <th>District</th>
+                                <th>Confirmed</th>
+                                <th>Active</th>
+                                <th>Recovered</th>
+                                <th>Deaths</th>
+                            </tr>
+                        </thead>
+                        {
+                            this.state.names.map(dist => {
+                                return (
+                                    <tbody key={dist[0]}>
+                                        <tr>
+                                            <td id="statename">{dist[0]}</td>
+                                            <td id="confirmed">
+                                                <div>
+                                                    <span><NumberFormat value={dist[1].confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    {
+                                                        dist[1].delta.confirmed > 0 && <span>+<NumberFormat value={dist[1].delta.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    }
+                                                </div>
+                                            </td>
+                                            <td id="active"><NumberFormat value={dist[1].active} displayType={'text'} thousandSeparator={true} /> </td>
+                                            <td id="recovered">
+                                                <div>
+                                                    <span><NumberFormat value={dist[1].recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    {
+                                                        dist[1].delta.recovered > 0 && <span>+<NumberFormat value={dist[1].delta.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    }
+                                                </div>
+                                            </td>
+                                            <td id="deaths">
+                                                <div>
+                                                    <span><NumberFormat value={dist[1].deceased} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    {
+                                                        dist[1].delta.deceased > 0 && <span>+<NumberFormat value={dist[1].delta.deceased} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                                    }
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                );
+                            })
+                        }
+                    </table>
+                </div>
+                <hr />
             </>
         )
     }

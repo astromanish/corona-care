@@ -1,0 +1,21 @@
+.logo{
+    width: 30%;
+    display: block;
+    max-width: 500px;
+}
+
+.nav{
+    width : 70%;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:500px){
+    .logo{
+        max-width: 250px;
+    }
+}

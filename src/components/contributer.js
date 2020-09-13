@@ -4,7 +4,7 @@ import img1 from './img/user.png';
 import img2 from './img/user1.png'
 const Contributer = () => {
     return (
-        <div className="container">
+        <div className="contributer-list">
             <div className="contri-item manish">
                 <img src={img1} alt="manish" />
                 <div className="contri-item-nametag">

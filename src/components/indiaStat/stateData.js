@@ -17,7 +17,7 @@ class StateData extends Component {
     }
     render() {
         const { posts } = this.state;
-        return(
+        return (
             <div className="stateData">
                 <table id="middle-table">
                     <thead>
@@ -34,7 +34,7 @@ class StateData extends Component {
                             if (post.statecode !== "TT")
                                 return (
                                     <tr key={post.statecode}>
-                                        <td id="statename"><Link to={"/" + post.statecode}>{post.state}</Link></td>
+                                        <td id="statename"><Link to={`/status/india/${post.statecode}`}>{post.state}</Link></td>
                                         <td id="confirmed">
                                             <div>
                                                 <span><NumberFormat value={post.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
@@ -67,10 +67,10 @@ class StateData extends Component {
                         }
                         )}
                     </tbody>
-                </table> 
+                </table>
             </div>
         )
-    }   
+    }
 }
 
 export default StateData 

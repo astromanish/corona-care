@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import NumberFormat from 'react-number-format';
-import CountUp from 'react-countup';
 
 class TotalStats extends Component {
     state = {
@@ -14,7 +13,7 @@ class TotalStats extends Component {
                     posts: res.data.statewise
                 });
             });
-        }
+    }
     render() {
         const { posts } = this.state;
         return (
@@ -39,14 +38,14 @@ class TotalStats extends Component {
                                                 <h2>
                                                     <NumberFormat value={post.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" />
                                                 </h2>
-                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltaconfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh"/></p>
+                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltaconfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
                                             </td>
                                             <td id="a">
-                                                <h2><NumberFormat value={post.active} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh"/></h2>
+                                                <h2><NumberFormat value={post.active} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
                                             </td>
                                             <td id="r">
-                                                <h2><NumberFormat value={post.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh"/></h2>
-                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltarecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh"/></p>
+                                                <h2><NumberFormat value={post.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
+                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltarecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
                                             </td>
                                             <td id="d">
                                                 <h2><NumberFormat value={post.deaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
