@@ -1,12 +1,14 @@
 import React from 'react';
 import './css/contributer.css';
-import img1 from './img/user.png';
-import img2 from './img/user1.png'
+import divyansh from './img/divyansh.jpeg';
+import vikas from './img/vikas.jpeg';
+import manish from './img/manish.jpeg';
+import amogh from './img/user1.png';
 const Contributer = () => {
     return (
         <div className="contributer-list">
             <div className="contri-item manish">
-                <img src={img1} alt="manish" />
+                <img src={manish} alt="manish" />
                 <div className="contri-item-nametag">
                     <h3 className="contri-item-name">Manish Singh</h3>
                     <p className="contri-item-roll">@astromanish</p>
@@ -19,7 +21,7 @@ const Contributer = () => {
                 </div>
             </div>
             <div className="contri-item divyansh">
-                <img src={img2} alt="divyansh" />
+                <img src={divyansh} alt="divyansh" />
                 <div className="contri-item-nametag">
                     <h3 className="contri-item-name">Divyansh Raj</h3>
                     <p className="contri-item-roll">@divyansh.raj4</p>
@@ -32,7 +34,7 @@ const Contributer = () => {
                 </div>
             </div>
             <div className="contri-item vikas">
-                <img src={img1} alt="vikas" />
+                <img src={vikas} alt="vikas" />
                 <div className="contri-item-nametag">
                     <h3 className="contri-item-name">Vikas Tiwary</h3>
                     <p className="contri-item-roll">@tiwari_vikas0</p>
@@ -45,7 +47,7 @@ const Contributer = () => {
                 </div>
             </div>
             <div className="contri-item amogh">
-                <img src={img2} alt="amogh" />
+                <img src={amogh} alt="amogh" />
                 <div className="contri-item-nametag">
                     <h3 className="contri-item-name">Amogh raut</h3>
                     <p className="contri-item-roll">@amogh_raut</p>
