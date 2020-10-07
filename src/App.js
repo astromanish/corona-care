@@ -7,6 +7,7 @@ import Home from './components/homepage'
 import IndiaStat from './components/indiaStat';
 import DistrictData from './components/districtData';
 import Hope from './components/hope';
+import Experiences from './components/experiences'
 import Bored from './components/bored';
 import Contributer from './components/contributer';
 import Footer from './components/footer';
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path="/status/india" component={IndiaStat} />
           <Route exact path="/status/india/:dist_id" component={DistrictData} />
           <Route exact path="/hope" component={Hope} />
+          <Route exact path="/experiences" component={Experiences} />
           <Route exact path="/bored" component={Bored} />
           <Route exact path="/contributer" component={Contributer} />
         </div>
