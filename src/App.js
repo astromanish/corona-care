@@ -4,6 +4,7 @@ import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Home from './components/homepage'
+import WorldStat from './components/worldStat'
 import IndiaStat from './components/indiaStat';
 import DistrictData from './components/districtData';
 import Hope from './components/hope';
@@ -21,6 +22,7 @@ const App = () => {
         <hr />
         <div className="container">
           <Route exact path="/" component={Home} />
+          <Route exact path="/status/world" component={WorldStat} />
           <Route exact path="/status/india" component={IndiaStat} />
           <Route exact path="/status/india/:dist_id" component={DistrictData} />
           <Route exact path="/hope" component={Hope} />

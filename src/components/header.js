@@ -14,7 +14,7 @@ const Header = () => {
                 <Nav className="mr-auto nav-list">
                     <Nav.Link><Link to="/home">Home</Link></Nav.Link>
                     <NavDropdown title="Status" id="basic-nav-dropdown">
-                        <NavDropdown.Item><Link to="/status">World</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/status/world">World</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/status/india">India</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/status/india/UP">Uttar Pradesh</Link></NavDropdown.Item>
                     </NavDropdown>
