@@ -16,10 +16,10 @@ const Answer = (props) => {
     setIsEditing(true);
   };
 
-  const cnfrEditHandler = (ans) => {
+  const cnfrEditHandler = (question) => {
     axios({
       method: "patch",
-      url: `https://karuna-go.herokuapp.com/answers/${question._id}/${ans._id}`,
+      url: `https://karuna-go.herokuapp.com/answers/${question._id}/${props.ans._id}`,
       data: {
         a_body: editAns,
       },
@@ -34,11 +34,11 @@ const Answer = (props) => {
       .catch((err) => console.error(err));
   };
 
-  const deleteHandler = (ans) => {
+  const deleteHandler = (question) => {
     console.log();
     axios({
       method: "delete",
-      url: `https://karuna-go.herokuapp.com/answers/${question._id}/${ans._id}`,
+      url: `https://karuna-go.herokuapp.com/answers/${question._id}/${props.ans._id}`,
       params: {
         ques_id: question._id,
       },
@@ -71,11 +71,11 @@ const Answer = (props) => {
                   <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => editHandler(props.ques)}>
+                  <Dropdown.Item onClick={() => editHandler(props.question)}>
                     <i className="fa fa-pencil" aria-hidden="true"></i> Edit
                   </Dropdown.Item>
                   <Dropdown.Divider />
-                  <Dropdown.Item onClick={() => deleteHandler(props.ques)}>
+                  <Dropdown.Item onClick={() => deleteHandler(props.question)}>
                     <i className="fa fa-trash" aria-hidden="true"></i> Delete
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -91,10 +91,10 @@ const Answer = (props) => {
                 required={true}
                 rows="7"
                 cols="40"
-                defaultValue={props.ques.q_body}
+                defaultValue={props.question.q_body}
                 onChange={(e) => setEditAns(e.target.value)}
               ></textarea>
-              <Button onClick={() => cnfrEditHandler(props.ques)}>
+              <Button onClick={() => cnfrEditHandler(props.question)}>
                 Confirm Edit
             </Button>
             </>

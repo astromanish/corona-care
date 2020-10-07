@@ -41,7 +41,7 @@ const App = () => {
               />
               <Route
                 exact
-                path="/experiences/:ques_id/answers"
+                path="/discussion-forum/:ques_id/answers"
                 component={AnswerAll}
               />
             </AnswerProvider>
