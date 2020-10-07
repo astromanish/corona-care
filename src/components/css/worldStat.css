@@ -1,0 +1,326 @@
+.Country{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .totalData{
+    background-color: white;
+    margin: 10px;
+  }
+  
+  #middle-table{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #middle-table tr td div{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #middle-table tr td div span:nth-child(2){
+    color: #f00d0d;
+    font-size: 77%;
+  }
+  .line-chart div{
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .bar-chart div{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  #chart {
+    background-color: #fdfdfd;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #chart div span {
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .totalData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .totalData table{
+        font-size: 0.8em;
+    }
+    #top-table td{
+        padding: 1rem;
+    }
+    #top-table{
+      word-wrap: normal !important;
+    }
+    .countryData{
+        overflow-x: scroll;
+    }
+    .countryData{
+        font-size: 0.8em;
+    }
+    #top-table{
+        width: 100%;
+    }
+    #middle-table{
+        width: 100%;
+        text-align: center;
+    }
+    #middle-table td{
+      overflow-x: auto;
+      padding: 0.4rem;
+      font-size: 83%;
+    }
+    #middle-table th{
+      word-wrap: normal;
+      padding-top: 10px;
+    }
+    #chart{
+      display: flex;
+      flex-direction: column;
+    }
+    .bar-chart div {
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .line-chart div {
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #chart canvas{
+      width: 85% !important;
+      max-width: 85% !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+     .totalData{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     #top-table{
+         width: 90%;
+     }
+     .countryData{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     #middle-table {
+         width: 90%;
+         text-align: center;
+     }
+     #middle-table th {
+         padding-top: 10px;
+     }
+     #middle-table td{
+         padding: 0.7rem;
+     }
+     #chart{
+         padding-top: 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .bar-chart{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     .bar-chart div {
+       padding: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+     .line-chart{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     .line-chart div {
+       padding: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+     #chart span{
+       padding: 20px;
+     }
+     #chart canvas{
+         width: 580px !important;
+         height: 300px !important;
+     }
+  }
+  
+  @media (min-width: 1200px) {
+    #chart hr{
+        border: 0.5px solid #616161;
+        background-color: #616161;
+    }  
+    .totalData{
+      flex-direction: column;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #top-table{
+        width: 1100px;
+        
+    }
+    #top-table td{
+      padding: 1rem;
+    }
+    .countryData{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #middle-table{
+        width: 1200px !important;
+        text-align: center;
+    }
+    #middle-table th{
+        padding-top: 10px;
+    }
+    #middle-table td{
+        padding: 0.7rem;
+    }
+    #chart{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .line-chart div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar-chart{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .line-chart{
+      justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+    .bar-chart div{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line-chart div canvas {
+        width: 500px !important;
+        max-width: 500px;
+    }
+    .bar-chart div canvas {
+        width: 500px !important;
+        max-width: 500px;
+    }
+  }
+  table {
+    border-spacing: 0px !important;
+  }
+  #daily-chart {
+    font-size: 1em !important;
+  }
+  table{
+      word-wrap: break-word;
+      table-layout: fixed;
+  }
+  /* top table */
+  #top-table h2 {
+    font-size: 1.5em;
+  }
+  #top-table td {
+    font-weight: 600;
+    font-size: 0.7em !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 1rem !important;
+    text-align: center;
+    border: none;
+  }
+  #top-table th {
+    font-weight: 400;  
+    font-size: 0.8em !important;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  #c {
+    color: #616161;
+  }
+  #a {
+    color: rgb(36, 37, 128);
+  }
+  #r {
+    color: rgb(66, 135, 245);
+  }
+  #d {
+    color: red;
+  }
+  
+  /*middle-content*/
+  #middle-table th {
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #middle-table tr td:nth-of-type(1):hover{
+    background-color: #dddddd;
+  }
+  #middle-table tr td:hover{
+    background-color: #f1f1f1;
+  }
+  #middle-table tr th:nth-of-type(1):hover{
+    background-color: #dddddd;
+  }
+  #middle-table tr th:hover{
+    background-color: #f1f1f1;
+  }
+  
+  #middle-table tr td:nth-of-type(4) {
+    color: rgb(22, 190, 22);
+  }
+  #middle-table tr td:nth-of-type(3) {
+    color: rgb(36, 37, 128);
+  }
+  #middle-table tr td:nth-of-type(2) {
+    color: rgb(89, 91, 92);
+  }
+  #middle-table tr td:nth-of-type(5) {
+    color: red;
+  }
+  #middle-table tr th:nth-of-type(4) {
+    color: rgb(22, 190, 22);
+  }
+  #middle-table tr th:nth-of-type(3) {
+    color: rgb(36, 37, 128);
+  }
+  #middle-table tr th:nth-of-type(2) {
+    color: rgb(89, 91, 92);
+  }
+  #middle-table tr th:nth-of-type(5) {
+    color: red;
+  }

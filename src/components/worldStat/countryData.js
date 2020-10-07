@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Link } from 'react-router-dom';
 import NumberFormat from 'react-number-format';
 
 class CountryData extends Component {
