@@ -8,62 +8,57 @@ class CountryData extends Component {
         posts: []
     }
     componentDidMount() {
-        axios.get("https://api.covid19india.org/data.json")
+        axios.get("https://api.covid19api.com/summary")
             .then(res => {
                 this.setState({
-                    posts: res.data.statewise
+                    posts: res.data.Countries
                 });
             });
     }
     render() {
         const { posts } = this.state;
         return (
-            <div className="stateData">
+            <div className="countryData">
                 <table id="middle-table">
                     <thead>
                         <tr>
-                            <th>State</th>
+                            <th>Country</th>
                             <th>Confirmed</th>
-                            <th>Active</th>
                             <th>Recovered</th>
                             <th>Deaths</th>
                         </tr>
                     </thead>
                     <tbody>
                         {posts.map(post => {
-                            if (post.statecode !== "TT")
-                                return (
-                                    <tr key={post.statecode}>
-                                        <td id="statename"><Link to={`/status/india/${post.statecode}`}>{post.state}</Link></td>
-                                        <td id="confirmed">
-                                            <div>
-                                                <span><NumberFormat value={post.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    post.deltaconfirmed > 0 && <span>+<NumberFormat value={post.deltaconfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>
-                                        <td id="active">
-                                            <NumberFormat value={post.active} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" />
-                                        </td>
-                                        <td id="recovered">
-                                            <div>
-                                                <span><NumberFormat value={post.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    post.deltarecovered > 0 && <span>+<NumberFormat value={post.deltarecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>
-                                        <td id="deaths">
-                                            <div>
-                                                <span><NumberFormat value={post.deaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                {
-                                                    post.deltadeaths > 0 && <span>+<NumberFormat value={post.deltadeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
-                                                }
-                                            </div>
-                                        </td>
-                                    </tr>
-                                )
+                            return (
+                                <tr key={post.CountryCode}>
+                                    <td id="country-name">{post.Country}</td>
+                                    <td id="confirmed">
+                                        <div>
+                                            <span><NumberFormat value={post.TotalConfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            {
+                                                post.NewConfirmed > 0 && <span>+<NumberFormat value={post.NewConfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            }
+                                        </div>
+                                    </td>
+                                    <td id="recovered">
+                                        <div>
+                                            <span><NumberFormat value={post.TotalRecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            {
+                                                post.NewRecovered > 0 && <span>+<NumberFormat value={post.NewRecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            }
+                                        </div>
+                                    </td>
+                                    <td id="deaths">
+                                        <div>
+                                            <span><NumberFormat value={post.TotalDeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            {
+                                                post.NewDeaths > 0 && <span>+<NumberFormat value={post.NewDeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></span>
+                                            }
+                                        </div>
+                                    </td>
+                                </tr>
+                            )
                         }
                         )}
                     </tbody>

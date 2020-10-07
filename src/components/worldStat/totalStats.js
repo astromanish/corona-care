@@ -4,58 +4,48 @@ import NumberFormat from 'react-number-format';
 
 class TotalStats extends Component {
     state = {
-        posts: []
+        posts: {}
     }
     componentDidMount() {
-        axios.get("https://api.covid19india.org/data.json")
+        axios.get("https://api.covid19api.com/summary")
             .then(res => {
                 this.setState({
-                    posts: res.data.statewise
+                    posts: res.data.Global
                 });
             });
     }
     render() {
-        const { posts } = this.state;
         return (
             <>
                 <div className="totalData">
-                    <div className="State">India Overview</div>
-                    {posts.map(post => {
-                        if (post.statecode === "TT")
-                            return (
-                                <table id="top-table" key="1">
-                                    <thead>
-                                        <tr>
-                                            <th id="c"><p>Confirmed</p></th>
-                                            <th id="a"><p>Active</p></th>
-                                            <th id="r"><p>Recovered</p></th>
-                                            <th id="d"><p>Deaths</p></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody key={post.statecode}>
-                                        <tr>
-                                            <td id="c">
-                                                <h2>
-                                                    <NumberFormat value={post.confirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" />
-                                                </h2>
-                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltaconfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
-                                            </td>
-                                            <td id="a">
-                                                <h2><NumberFormat value={post.active} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
-                                            </td>
-                                            <td id="r">
-                                                <h2><NumberFormat value={post.recovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
-                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltarecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
-                                            </td>
-                                            <td id="d">
-                                                <h2><NumberFormat value={post.deaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
-                                                <p style={{ color: "red" }}>+<NumberFormat value={post.deltadeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            )
-                    })}
+                    <div className="State">World Overview</div>
+                    <table id="top-table" key="1">
+                        <thead>
+                            <tr>
+                                <th id="c"><p>Confirmed</p></th>
+                                <th id="r"><p>Recovered</p></th>
+                                <th id="d"><p>Deaths</p></th>
+                            </tr>
+                        </thead>
+                        <tbody key={this.state.posts.statecode}>
+                            <tr>
+                                <td id="c">
+                                    <h2>
+                                        <NumberFormat value={this.state.posts.TotalConfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" />
+                                    </h2>
+                                    <p style={{ color: "red" }}>+<NumberFormat value={this.state.posts.NewConfirmed} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
+                                </td>
+                                <td id="r">
+                                    <h2><NumberFormat value={this.state.posts.TotalRecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
+                                    <p style={{ color: "red" }}>+<NumberFormat value={this.state.posts.NewRecovered} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
+                                </td>
+                                <td id="d">
+                                    <h2><NumberFormat value={this.state.posts.TotalDeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></h2>
+                                    <p style={{ color: "red" }}>+<NumberFormat value={this.state.posts.NewDeaths} displayType={'text'} thousandSeparator={true} thousandsGroupStyle="lakh" /></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <hr />
             </>
