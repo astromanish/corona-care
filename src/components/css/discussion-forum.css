@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap');
+@media (max-width: 800px) {
+  .d-item {
+    width: 95%;
+    margin: 0 auto 0 auto;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .d-item {
+    width: 82%;
+    margin: 0 auto 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .d-item {
+    width: 800px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+body {
+  background-color: rgb(252, 252, 252);
+}
+
+.d-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Kumbh Sans", sans-serif;
+}
+/*Ask Question top*/
+.d-item-ask-model {
+  box-shadow: rgba(221, 230, 237, 0.4) 0px 16px 32px 0px;
+  background-color: white;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.d-ask-head {
+  padding: 0px 0px 20px 0px;
+  font-size: 110%;
+  font-weight: 600;
+}
+.d-ask-model {
+  margin-left: auto;
+}
+.d-item-ask-model .d-item-form-button {
+  text-align: end;
+}
+/**/
+/*Question*/
+.d-ques-item{
+  background-color: white;
+  margin: 20px 0 20px 0;
+  box-shadow: 0px 2px 20px 10px rgba(190, 190, 190, 0.185);
+}
+.d-ques{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.d-user-details{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 10px;
+}
+.d-user-details-2{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.d-user-details-2-name{
+  grid-row: 1/3;
+  font-size: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.d-user-details-2-name div:nth-child(2){
+  font-size: 60%;
+  color: #6b6b6b;
+}
+.d-ques-body{
+  font-family: 'Epilogue',
+  sans-serif;
+  padding-left: 7px;
+  font-size: 105%;
+}
+.d-user-details-icon{
+  grid-row: 1/3;
+}
+.d-user-details-icon .fa-wpbeginner{
+  font-size: 200%;
+}
+.d-edit-option{
+  text-align: end;
+}
+.d-ques-last-item{
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.d-ques-stats{
+  padding-left: 7px;
+  color: #9c9c9c;
+  font-size: 70%;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.d-ques-stats a{
+  color: #6b6b6b;
+}
+.d-ques-vote-icons{
+  display: flex;
+  margin-left: auto;
+}
+.d-ques-vote-icons button {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: white;
+  margin: 0 2px 0 0;
+}
+
+.d-ques-vote-icons button:focus {
+  background-color: white;
+  color: white;
+}
+
+.d-ques-vote-up button i {
+  font-size: 80%;
+  color: rgb(209, 209, 209);
+}
+
+.d-ques-vote-up button i:hover {
+  background-color: white;
+  color: rgba(95, 145, 252, 0.9);
+}
+
+.d-ques-vote-down button i {
+  font-size: 80%;
+  color: rgb(209, 209, 209);
+}
+
+.d-ques-vote-down button i:hover {
+  background-color: white;
+  color: rgba(252, 95, 95, 0.9);
+}
+/*Dropdown Style*/
+.d-edit-option .dropdown-toggle::after{
+  content: none;
+}
+.d-edit-option .dropdown button{
+  padding: 0px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+.d-edit-option .fa-ellipsis-h{
+  color: #979797;
+}
+.d-edit-option .dropdown button:hover{
+  background-color: white;
+}
+.d-edit-option .dropdown-toggle{
+  background-color: white;
+  border: none;
+}
+.d-edit-option .dropdown-toggle:focus{
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 1) !important;
+  border-color: white !important;
+  background-color: white !important;
+}
+.d-edit-option .btn-light:focus{
+  border-color: white;
+  background-color: rgb(248, 248, 248);
+}
+/**/
+
+/*Questions Answers portion*/
+
+.d-answers-section {
+  box-shadow: rgba(221, 230, 237, 0.4) 0px 16px 32px 0px;
+  height: 300px;
+  overflow-y: scroll;
+}
+.d-answers-each {
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  margin: 10px 0 10px 0;
+}
+
+.no-question {
+  box-shadow: rgba(221, 230, 237, 0.4) 0px 16px 32px 0px;
+  background-color: white;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.no-answer {
+  box-shadow: rgba(221, 230, 237, 0.4) 0px 16px 32px 0px;
+  background-color: white;
+  border: 1px solid #fafafa;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 20px;
+}
+.d-item-ask-model{
+  background-color: white !important;
+}
+form{
+  background-color: white;
+}

@@ -8,11 +8,15 @@ import WorldStat from './components/worldStat'
 import IndiaStat from './components/indiaStat';
 import DistrictData from './components/districtData';
 import Hope from './components/hope';
-import Experiences from './components/experiences'
+import Experiences from './components/discussion-forum';
+import AnswerAll from "./components/DiscussionForum/answer-all";
+
 import Bored from './components/bored';
 import Contributer from './components/contributer';
 import Footer from './components/footer';
 
+import { QuestionProvider } from "./components/DiscussionForum/QuestionContext";
+import { AnswerProvider } from "./components/DiscussionForum/AnswerContext";
 
 const App = () => {
   return (
@@ -26,9 +30,22 @@ const App = () => {
           <Route exact path="/status/india" component={IndiaStat} />
           <Route exact path="/status/india/:dist_id" component={DistrictData} />
           <Route exact path="/hope" component={Hope} />
-          <Route exact path="/experiences" component={Experiences} />
           <Route exact path="/bored" component={Bored} />
           <Route exact path="/contributer" component={Contributer} />
+          <QuestionProvider>
+            <AnswerProvider>
+              <Route
+                exact
+                path="/experiences"
+                component={Experiences}
+              />
+              <Route
+                exact
+                path="/experiences/:ques_id/answers"
+                component={AnswerAll}
+              />
+            </AnswerProvider>
+          </QuestionProvider>
         </div>
         <hr />
         <Footer />
