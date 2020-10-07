@@ -16,8 +16,9 @@ const Header = () => {
                     <NavDropdown title="Status" id="basic-nav-dropdown">
                         <NavDropdown.Item><Link to="/status">World</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/status/india">India</Link></NavDropdown.Item>
-                        <NavDropdown.Item><Link to="/status/">Uttar Pradesh</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/status/india/UP">Uttar Pradesh</Link></NavDropdown.Item>
                     </NavDropdown>
+                    <Nav.Link><Link to="/experiences">Experiences</Link></Nav.Link>
                     <Nav.Link><Link to="/hope">Hope</Link></Nav.Link>
                     <Nav.Link><Link to="/bored">Bored?</Link></Nav.Link>
                     <Nav.Link><Link to="/contributer">Contributers</Link></Nav.Link>
