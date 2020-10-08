@@ -8,7 +8,7 @@ class Charts extends Component {
     render() {
         return (
             <>
-            <hr/>
+                <hr />
                 <div id="chart">
                     <div className="bar-chart">
                         <div><span>Total Cases in India</span><TotalConfirmed /></div>
@@ -25,7 +25,6 @@ class Charts extends Component {
                         </div>
                     </div>
                 </div>
-                <hr/>
             </>
         )
     }

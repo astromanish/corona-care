@@ -23,7 +23,7 @@ class DistrictDaily extends Component {
                         if (post.statecode === this.props.value)
                             return (
                                 <>
-                                <div className="State">{post.state}</div>
+                                    <div className="State">{post.state}</div>
                                     <table id="top-table" key="1">
                                         <thead>
                                             <tr>
@@ -59,12 +59,12 @@ class DistrictDaily extends Component {
                                             </tr>
                                         </tbody>
                                     </table>
-                                    </>
+                                </>
                             )
                     })}
-                    
+
                 </div>
-                <hr/>    
+                <hr />
             </>
         )
     }
