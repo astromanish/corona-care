@@ -3,7 +3,7 @@ import './css/contributer.css';
 import divyansh from './img/divyansh.jpeg';
 import vikas from './img/vikas.jpeg';
 import manish from './img/manish.jpeg';
-import amogh from './img/user1.png';
+import amogh from './img/amogh.jpeg';
 const Contributer = () => {
     return (
         <div className="contributer-list">
