@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Button, Dropdown } from "react-bootstrap";
+import { Button, Dropdown, Form } from "react-bootstrap";
 import axios from "axios";
 
 import { AnswerContext } from "./AnswerContext";
@@ -55,13 +55,13 @@ const Answer = (props) => {
         <div className="d-user-details">
           <div className="d-user-details-2">
             <div className="d-user-details-icon">
-              <i className="fa fa-wpbeginner" aria-hidden="true"></i>
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
             </div>
             <div className="d-user-details-2-name">
               {
                 props.ans.writer_name && <div>{props.ans.writer_name}</div>
               }
-              <div>{props.ans.date_created && moment(props.ans.date_created).fromNow()}</div>
+              {/* <div>{props.ans.date_created && moment(props.ans.date_created).fromNow()}</div> */}
             </div>
           </div>
           <div className="d-edit-option">
@@ -72,7 +72,7 @@ const Answer = (props) => {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={() => editHandler(props.question)}>
-                    <i className="fa fa-pencil" aria-hidden="true"></i> Edit
+                    <i class="fa fa-cog" aria-hidden="true"></i> Edit
                   </Dropdown.Item>
                   <Dropdown.Divider />
                   <Dropdown.Item onClick={() => deleteHandler(props.question)}>
@@ -87,14 +87,10 @@ const Answer = (props) => {
         <div className="d-ques-body">
           {isEditing ? (
             <>
-              <textarea
-                required={true}
-                rows="7"
-                cols="40"
-                defaultValue={props.question.q_body}
-                onChange={(e) => setEditAns(e.target.value)}
-              ></textarea>
-              <Button onClick={() => cnfrEditHandler(props.question)}>
+              <Form.Control as="textarea" rows="3" defaultValue={props.question.q_body}
+                onChange={(e) => setEditAns(e.target.value)}></Form.Control>
+              <br />
+              <Button onClick={() => cnfrEditHandler(props.ques)}>
                 Confirm Edit
             </Button>
             </>

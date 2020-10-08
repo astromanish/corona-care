@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import moment from 'moment';
 import axios from "axios";
-import { Button, Dropdown } from "react-bootstrap";
+import { Button, Dropdown, Form } from "react-bootstrap";
 
 import { QuestionContext } from "./QuestionContext";
 
@@ -49,13 +49,13 @@ const Question = (props) => {
         <div className="d-user-details">
           <div className="d-user-details-2">
             <div className="d-user-details-icon">
-              <i className="fa fa-wpbeginner" aria-hidden="true"></i>
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
             </div>
             <div className="d-user-details-2-name">
               {
-                props.ques.writer_name && <div>{props.ques.writer_name}</div>
+                props.ques.writer_name && <div>  {props.ques.writer_name}</div>
               }
-              <div>{props.ques.date_created && moment(props.ques.date_created).fromNow()}</div>
+              {/* <div>{props.ques.date_created && moment(props.ques.date_created).fromNow()}</div> */}
             </div>
           </div>
           <div className="d-edit-option">
@@ -66,7 +66,7 @@ const Question = (props) => {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={() => editHandler(props.ques)}>
-                    <i className="fa fa-pencil" aria-hidden="true"></i> Edit
+                    <i className="fa fa-cog" aria-hidden="true"></i> Edit
                   </Dropdown.Item>
                   <Dropdown.Divider />
                   <Dropdown.Item onClick={() => deleteHandler(props.ques)}>
@@ -81,12 +81,9 @@ const Question = (props) => {
         <div className="d-ques-body">
           {isEditing ? (
             <>
-              <textarea
-                rows="7"
-                cols="40"
-                defaultValue={props.ques.q_body}
-                onChange={(e) => setEditAns(e.target.value)}
-              ></textarea>
+              <Form.Control as="textarea" rows="3" defaultValue={props.ques.q_body}
+                onChange={(e) => setEditAns(e.target.value)}></Form.Control>
+              <br />
               <Button onClick={() => cnfrEditHandler(props.ques)}>
                 Confirm Edit
             </Button>
@@ -107,11 +104,11 @@ const Question = (props) => {
                 }}
               >  14 Answers </Link></span>
             </div>
-            <div className="d-upvotes">
+            {/* <div className="d-upvotes">
               <span>13 Upvotes </span>
-            </div>
+            </div> */}
           </div>
-          <div className="d-ques-vote-icons">
+          {/* <div className="d-ques-vote-icons">
             <div className="d-ques-vote-up">
               <button>
                 <i className="fa fa-chevron-up" aria-hidden="true"></i>
@@ -122,7 +119,7 @@ const Question = (props) => {
                 <i className="fa fa-chevron-down" aria-hidden="true"></i>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

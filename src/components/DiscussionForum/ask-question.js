@@ -40,26 +40,23 @@ const AskQuestion = () => {
       <div className="d-item d-item-ask-model">
         <Form onSubmit={submitFun}>
           <Form.Group>
-            <Form.Control
-              ref={quesRef}
-              value={question}
-              type="text"
-              placeholder="Enter question you wanna ask.."
-              onChange={(e) => setQuestion(e.target.value)}
-            />
+            <Form.Control ref={quesRef}
+              value={question} as="textarea" rows="3"
+              placeholder="Enter your question/experience"
+              onChange={(e) => setQuestion(e.target.value)} />
           </Form.Group>
           <Form.Group>
             <Form.Control
               ref={nameRef}
               value={name}
               type="text"
-              placeholder="Enter your first name.."
+              placeholder="Enter your name"
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
           <div className="d-item-form-button">
             <Button variant="primary" type="submit" size="sm">
-              Ask
+              Add Question/Experience
             </Button>
           </div>
         </Form>

@@ -43,20 +43,17 @@ const AddAnswer = (props) => {
       <div className="d-item-ask-model">
         <Form onSubmit={submitFun}>
           <Form.Group>
-            <Form.Control
-              ref={ansRef}
-              value={answer}
-              type="text"
-              placeholder="Enter your answer to this question..."
-              onChange={(e) => setAnswer(e.target.value)}
-            />
+            <Form.Control ref={ansRef}
+              value={answer} as="textarea" rows="3"
+              placeholder="Enter your reply"
+              onChange={(e) => setAnswer(e.target.value)} />
           </Form.Group>
           <Form.Group>
             <Form.Control
               ref={writerRef}
               value={writer}
               type="text"
-              placeholder="Enter your first name.."
+              placeholder="Enter your name"
               onChange={(e) => setWriter(e.target.value)}
             />
           </Form.Group>

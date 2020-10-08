@@ -37,7 +37,7 @@ const QuestionList = () => {
           })
       ) : (
           <div className="d-item no-question">
-            <p>Be first one to ask question here</p>
+            <p>Be first one to ask question/add experience here</p>
           </div>
         )}
     </>
