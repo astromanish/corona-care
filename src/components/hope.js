@@ -54,7 +54,10 @@ const Hope = () => {
         //     </div>
         // </>
         <>
-
+            <h1 className="heading-1">Vaccine</h1>
+            <div className="vaccine">
+                <div className=""></div>
+            </div>
         </>
     );
 }
