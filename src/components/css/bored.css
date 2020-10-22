@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
 img {
   float: left;
   width: 50%;
   padding: 0 10px 10px 10px;
   border-radius: 20px;
 }
-
-
 
 div {
   background-color: #0f3057;
@@ -17,33 +17,31 @@ body {
 }
 
 a:visited {
-  color: white
+  color: white;
 }
 
 p {
   color: #e8ffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 90%;
   line-height: 1.6;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: white;
 }
 
 h1 {
   color: white;
-  font-family: 'Sacramento', cursive;
+  font-family: "Noto Sans", sans-serif;
   font-size: 60px;
 }
-
-
 
 .sidebar-box {
   max-height: 180px;
   position: relative;
   overflow: hidden;
-
 }
 
 .sidebar-box .read-more {
@@ -60,7 +58,7 @@ h1 {
 
 .imgbox {
   overflow: auto;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 .artcl {
@@ -109,10 +107,9 @@ h1 {
   text-decoration: none;
 }
 
-.storeicon{
-  float:right;
-  width:20%
-
+.storeicon {
+  float: right;
+  width: 20%;
 }
 
 @media only screen and (max-width: 768px) {
