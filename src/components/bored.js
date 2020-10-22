@@ -1,12 +1,24 @@
 import React from 'react'
 
+import kidsPlaying from "./img/kidsplaying.png";
+import skills from "./img/skills.jpg";
+import games from './img/games.jpg';
+import selfCare from './img/selfcare.png';
+import warriors from "./img/warriors.jpeg";
+import hero from "./img/hero.jpg";
+import mentalHealth from './img/mentalhealth.jpg';
+import couns from './img/couns.png';
+import GooglePlay from "./img/GooglePlay.png";
+import appstore from "./img/appstore.png";
+import hope1 from './img/hope1.jpg';
+
 const Bored = () => {
     return (
         <>
             <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Best Online Games To Play In Quarantine</h1>
-      <img src="img/kidsplaying.png" alt="kidsplaying" className="imgleft"/>
+      <img src={kidsPlaying} alt="kidsplaying" className="imgleft"/>
       <p>
         Not meeting your friends and missing fun days hanging out with them, is one of the biggest boring disadvantages of quarantine forced upon us by this COVID-19 pandemic. Thanks to our cell phones and the internet, we have plenty of ways to pass
         time. We have Social Media, Video Calling, Group Video calling, which brings our besties together. We understand that there are still many days to pass with social distancing to follow.
@@ -77,7 +89,7 @@ const Bored = () => {
     <div className="imgbox">
 
       <h1 className="hdr">Skills To Learn</h1>
-      <img src="img/skills.jpg" alt="skills" className="imgleft" style={{float: "right"}}/>
+      <img src={skills} alt="skills" className="imgleft" style={{float: "right"}}/>
 
       <p>
         If you’re stuck at home as a result of the coronavirus outbreak, then chances are you’re probably on the lookout for something to do.While jigsaw puzzles and video games can be a fun way to get through a few hours of the day, there are
@@ -167,7 +179,7 @@ const Bored = () => {
       <h1 className="hdr">Indoor Games to play during Lockdown</h1>
 
 
-      <img src="img/games.jpg" alt="games" className="imgright"/>
+      <img src={games} alt="games" className="imgright"/>
 
       <p>
         The 21 day lockdown has got all of us getting used to and adopting new schedules as far as our daily routines are concerned. Sleep patterns have changed, meals in some cases have become more frequent while in the case of others have reduced.
@@ -218,7 +230,7 @@ const Bored = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Self Care</h1>
-      <img src="img/selfcare.png" alt="selfcare" style={{width : "25%", marginRight: "20px" ,float: "right"}}/>
+      <img src={selfCare} alt="selfcare" style={{width : "25%", marginRight: "20px" ,float: "right"}}/>
       <p style={{paddingTop:"40px"}}>
         If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
         Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times.
@@ -230,7 +242,7 @@ const Bored = () => {
   <hr className="partition" />
   <div className="artcl">
     <h1 className="hdr">Covid Heroes</h1>
-    <img src="img/warriors.jpeg" alt=""/>
+    <img src={warriors} alt=""/>
     <p>
       Given site https://covidwarriors.gov.in/ not working
     </p>
@@ -243,7 +255,7 @@ const Bored = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Our Role as Individuals !</h1>
-      <img src="img/hero.jpg" alt="individual" style={{float: "right"}}/>
+      <img src={hero} alt="individual" style={{float: "right"}}/>
       <p style={{paddingTop: "80px"}}>
         We are all impacted by COVID19 – A.K.A. the Coronavirus – one way or another. No matter where we are in the world and where in the age spectrum we sit. However, some of us are at higher risk – for instance, older people and people with severe
         underlying health conditions. Some of us are more impacted than others due to individual, community or geographical circumstances. Now before a deep dive into specifically what you all can do, start by applying practicality and common sense
@@ -271,7 +283,7 @@ const Bored = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Coping with Anxiety & Depression</h1>
-      <img src="img/mentalhealth.jpg" alt="mentalhealth"/>
+      <img src={mentalHealth} alt="mentalhealth"/>
       <p style={{marginTop:"160px", fontSize: "110%"}}>In the midst of the global COVID-19 pandemic, it’s easy to feel overwhelmed by hopelessness and despair. But these tips can help improve your mood and ease depression.</p>
 
 
@@ -317,13 +329,13 @@ const Bored = () => {
   <div className="artcl">
     <h1 className="hdr">Still need a counsellor?</h1>
     <div className="imgbox">
-      <img src="img/couns.png" alt="counsellor" style={{float: "right"}}/>
+      <img src={couns} alt="counsellor" style={{float: "right"}}/>
       <p>Chat Online anonymously with career, relationship, parenting counselors, psychologists for advice on self improvement & relieving stress, anxiety & depression.</p>
       <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
-        <img src="img/GooglePlay.png" alt="playstore" className="storeicon"/>
+        <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
-        <img src="img/appstore.png" alt="appstore" className="storeicon"/>
+        <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
 
     </div>
@@ -331,7 +343,7 @@ const Bored = () => {
   <hr className="partition" />
   <div className="artcl">
     <h1 className="hdr">A Hope in this Pandemic!</h1>
-    <img src="img/hope1.jpg" alt="hope"/>
+    <img src={hope1} alt="hope"/>
     <p>The novel coronavirus pandemic can be the moment the world pushes back against fear and isolationism, and turns instead towards hope, solidarity and a shared sense of global community.
       These are fearful times, to be sure. Some 3.55 million people have been infected by COVID-19 and nearly a quarter of a million have perished. Billions of people are on lockdown or in self isolation.
       Yet this pandemic and the fear, dread, and anxiety that it has induced has not occurred in isolation. For years, we have existed under the constant and pervasive feeling that things are getting worse, that we are failing each other and that we

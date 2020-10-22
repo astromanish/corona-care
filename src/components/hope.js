@@ -1,6 +1,29 @@
 import React from 'react';
 import './css/hope.css';
 
+import vaccine from "./img/vacc.jpg";
+import indiaRus from "./img/indi.jpg";
+import fear from "./img/fear.jpg";
+import hospital from "./img/hosp.jpg";
+import homeRemedies from "./img/remedies.jpeg";
+import ayushKwath from "./img/ayush_kwath.png";
+import giloy from "./img/giloy.png";
+import aswagandha from "./img/ashwagandha.png";
+import amla from "./img/amla.png";
+import mulethi from "./img/mulethi.png";
+import turmericSalt from "./img/turmeric_salt.png";
+import turmeric from './img/turmeric.png';
+import chyawanprash from "./img/chyawanprash.png";
+import myth2 from "./img/myth2.png";
+import asymp from "./img/asymp.jpg";
+import homet from "./img/homet.jpg";
+import setu from "./img/setu.jpg";
+import GooglePlay from "./img/GooglePlay.png";
+import appstore from "./img/appstore.png";
+import oldoc from "./img/oldoc.jpg";
+import pharm from "./img/pharm.png";
+import tracking from "./img/tracking.jpg";
+
 const Hope = () => {
     return ( 
         <>
@@ -32,7 +55,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Vaccine Updates</h1>
-      <img src="img/vacc.jpg" alt="vaccine"/>
+      <img src={vaccine} alt="vaccine"/>
       <p>Coronavirus still poses a significant threat, but there are no vaccines proven to protect the body against the disease it causes - Covid-19.
         However there are around 40 different coronavirus vaccines in clinical trials - including one being developed by the University of Oxford that is already in an advanced stage of testing.</p>
 
@@ -80,7 +103,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">India-Russia collaboration for Sputnik-V</h1>
-      <img src="img/indi.jpg" alt="idia-russia flag" style={{float:"right"}}/>
+      <img src={indiaRus} alt="idia-russia flag" style={{float:"right"}}/>
       <p style={{marginTop :"150px"}}>India and Russia are in talks for collaboration to manufacture Sputnik V – the anti-coronavirus vaccine launched by Moscow earlier this month – and for approval to conduct phase three trials, Union Health Secretary Rajesh Bhushan said on
         Tuesday. Bhushan is also the co-chair of the national Covid-19 vaccine administration task force.</p>
 
@@ -108,7 +131,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Fear among Non-Covid patients</h1>
-      <img src="img/fear.jpg" alt="fear"/>
+      <img src={fear} alt="fear"/>
       <p>New Delhi: Due to the coronavirus pandemic, patients suffering from critical diseases like cancer and those requiring surgeries are delaying hospital visits and thereby endangering their health and even risking their lives, according to some
         doctors.
 
@@ -150,7 +173,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Hospital Capacity</h1>
-      <img src="img/hosp.jpg" alt="hospital"/>
+      <img src={hospital} alt="hospital"/>
       <p>The coronavirus disease 2019 (COVID-19) news coming from Italy should be sobering to health system leaders throughout the world. We are witnessing an advanced health system stretched beyond its capacity. When the capacity of the system is
         exceeded, rationing decisions may need to be made that extend well beyond patients with COVID-19. On March 11, the Italian College of Anesthesia, Analgesia, Resuscitation, and Intensive Care was forced to publish guidelines for rationing
         care. Infectious disease and epidemiology experts1 have been outlining the worst-case scenarios possible with the unchecked spread of a novel virus, both in terms of immunity and preparedness. Unfortunately, hospital systems are designed for
@@ -193,7 +216,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Home Remedies</h1>
-      <img src="img/remedies.jpeg" alt="home_remedies" className="bigimg"/>
+      <img src={homeRemedies} alt="home_remedies" className="bigimg"/>
       <p>The Union Health Ministry on Sunday issued several guidelines to manage COVID-19 and provide holistic care to those who are healing from the disease. Apart from general advises such as practising yoga, seeking counselling, having enough
         water and a healthy diet, the ministry also released a long list of home remedies for boosting immunity and making a quick recovery. Here is the complete list of home remedies released by the health ministry and how they can help in
         strengthening immunity and proper recovery post-COVID-19.</p>
@@ -201,7 +224,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/ayush_kwath.png" alt="ayush_kwath" style={{float:"right"}}/>
+    <img src={ayushKwath} alt="ayush_kwath" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ayush Kwath</h2>
     <p>The ministry suggested drinking 1 cup or 150 ml of Ayush Kwath every day. It is a combination of medicinal herbs like four parts Tulsi (holy basil), two parts Dalchini (cinnamon), two parts Sunthi (ginger root) and one part Krishna Marich
       (black pepper). The ministry has also previously released instructions on how to make this drink at home. Take all the dried ingredients and make a coarse powder. Divide it into tea bags of 3 grams each. It can be added to 150 ml of boiled
@@ -210,7 +233,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/giloy.png" alt="giloy"/>
+    <img src={giloy} alt="giloy"/>
     <h2 style={{textAlign: "center"}}>Sanshamani Vati</h2>
     <p>
       The next prescription by the ministry is to have 1 gram of Sunshmani Vati every day. It is also known as Guduchi ghana vati and is made with the bark of Giloy tree. It is considered useful in treating all types of fevers. It has mild
@@ -221,7 +244,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/ashwagandha.png" alt="ashwagandha" style={{float:"right"}}/>
+    <img src={aswagandha} alt="ashwagandha" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ashwagandha</h2>
     <p>The ministry has also advised taking 1-3 grams of ashwagandha powder twice daily for 15 days. Ashwagandha is an ancient medicinal herb that provides a range of health benefits to the body. Recovering from diseases like COVID-19 can be very
       stressful for the body and mind. Ashwagandha is effective in reducing stress and cortisol levels, promoting brain function, strengthening immunity and bringing down blood sugar levels. It also helps combat symptoms of anxiety and depression.
@@ -230,7 +253,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/amla.png" alt="amla"/>
+    <img src={amla} alt="amla"/>
     <h2 style={{textAlign: "center"}}>Amla</h2>
     <p>Another home remedy recommended by the ministry is to have 1 amla fruit or 1-3 grams of amla powder daily. Amla has long been touted for its ability to treat cold, cough and flu. It makes the respiratory system more robust and delivers relief
       from chest congestion. Amla contains chromium that strengthens the heart, which is impacted by COVID-19. It is also loaded with antioxidants that fight free radicals and keep many diseases at bay. The anti-bacterial qualities of amla also
@@ -239,7 +262,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/mulethi.png" alt="meluthi" style={{float:"right"}}/>
+    <img src={mulethi} alt="meluthi" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Mulethi powder</h2>
     <p>Mulethi powder is another ancient medicinal herb prescribed by the health ministry to people who have a dry cough. The dosage recommended is 1-3 grams of mulethi powder twice every day with lukewarm water. Mulethi or liquorice is useful in
       providing quick relief from cough and cold. You can also make a cold and cough relief tea at home by boiling 1-inch mulethi root, 1 tsp grated ginger, 3-4 black peppercorns in 2 cups of water and reducing it to half. If you cannot bear the
@@ -247,7 +270,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/turmeric_salt.png" alt="turmeric_salt"/>
+    <img src={turmericSalt} alt="turmeric_salt"/>
     <h2 style={{textAlign: "center"}}>Gargling with turmeric & salt
     </h2>
     <p>Sore throat is another pesky aftereffect of COVID-19. For this, the health ministry advises gargling with warm water containing turmeric and salt. Salt in the solution neutralises the acids in the throat and flushes them away, thus providing
@@ -257,7 +280,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/turmeric.png" alt="turmeric" style={{float:"right"}}/>
+    <img src={turmeric} alt="turmeric" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Warm Turmeric milk</h2>
     <p>The next suggestion by the ministry is to drink warm milk with ½ tsp Turmeric every morning and evening. Turmeric milk has therapeutic properties that help the body in recovering from a disease or injury quickly. Haldi doodh is useful in
       speeding up the healing process of the body and shielding it with several ailments and infections. Turmeric also has anti-microbial, anti-allergic and anti-inflammatory properties. You can also add a pinch of powdered black pepper to increase
@@ -266,7 +289,7 @@ const Hope = () => {
   </div>
   <hr className="partition2"/>
   <div className="imgbox2">
-    <img src="img/chyawanprash.png" alt="chyawanprash"/>
+    <img src={chyawanprash} alt="chyawanprash"/>
     <h2 style={{textAlign: "center"}}>Chyawanprash</h2>
     <p>Taking 1 tsp or 5 mg of Chyawanprash daily in the morning is recommended by the health ministry. Chyawanprash contains more than 40 ancient medicinal herbs that can stimulate immunity and help in recovering quickly from diseases. It was
       earlier also suggested by the Ministry of AYUSH to have chyawanprash in the morning with milk or lukewarm water to boost immunity. People with diabetes were instructed to take sugar-free chyawanprash.</p>
@@ -276,7 +299,7 @@ const Hope = () => {
   <hr className="partition" />
   <div className="artcl">
     <div className="imgbox">
-      <img src="img/myth2.png" alt="mythbuster" style={{width:"40%"}}/>
+      <img src={myth2} alt="mythbuster" style={{width:"40%"}}/>
       <h1 className="hdr">MythBusters</h1>
     </div>
     <h2>FACT: Vitamin and mineral supplements cannot cure COVID-19 </h2>
@@ -331,7 +354,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Asymptomatic Covid patients</h1>
-      <img src="img/asymp.jpg" alt="asymptomatic"/>
+      <img src={asymp} alt="asymptomatic"/>
       <p>Blood tests that check for exposure to the coronavirus are starting to come online, and preliminary findings suggest that many people have been infected without knowing it. Even people who do eventually experience the common symptoms of
         COVID-19 don’t start coughing and spiking fevers the moment they’re infected.
 
@@ -372,7 +395,7 @@ const Hope = () => {
   <div className="artcl">
     <div className="imgbox">
       <h1 className="hdr">Home Treatment</h1>
-      <img src="img/homet.jpg" alt="hometreatment" style={{float: "right"}}/>
+      <img src={homet} alt="hometreatment" style={{float: "right"}}/>
       <p>Many Americans have stocked up on food and other supplies in preparation for social distancing.
 
         But while you may have enough toilet paper to last through the summer, have you thought about what you’ll need to have on hand if you actually contract COVID-19 and need to self-quarantine?
@@ -433,48 +456,48 @@ const Hope = () => {
   <div className="artcl">
     <h1 className="hdr">Technology to the rescue.</h1>
     <div className="imgbox2">
-      <img src="img/setu.jpg" alt="Aarogya Setu"/>
+      <img src={setu} alt="Aarogya Setu"/>
       <h2 style={{textAlign:"center"}}>Aarogya Setu</h2>
       <p>
         Aarogya Setu is an Indian open-source COVID–19 "contact tracing, syndromic mapping and self-assessment" digital service, primarily a mobile app, developed by the National Informatics Centre.
       </p>
       <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
-        <img src="img/GooglePlay.png" alt="playstore" className="storeicon"/>
+        <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
-        <img src="img/appstore.png" alt="appstore" className="storeicon"/>
+        <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
     <hr className="partition2"/>
     <div className="imgbox2">
-      <img src="img/oldoc.jpg" alt="tracking apps" style={{float:"right", height: "80%"}}/>
+      <img src={oldoc} alt="tracking apps" style={{float:"right", height: "80%"}}/>
       <h2 style={{textAlign:"center"}}>Online Doctor</h2>
       <p>DocOnline Health provides innovative platform where users can talk to a doctor online via audio/video/chat at anytime & from anywhere!</p>
       <a href="https://play.google.com/store/apps/details?id=com.doconline.doconline&hl=en">
-        <img src="img/GooglePlay.png" alt="playstore" className="storeicon"/>
+        <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://itunes.apple.com/us/app/doconline/id1234520016?ls=1&mt=8">
-        <img src="img/appstore.png" alt="appstore" className="storeicon"/>
+        <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
     <hr className="partition2"/>
     <div className="imgbox2">
-      <img src="img/pharm.png" alt="PharmeasyLogo"/>
+      <img src={pharm} alt="PharmeasyLogo"/>
       <h2 style={{textAlign:"center"}}>Online medication</h2>
       <p>
         PharmEasy is India's most trusted online medical supply store & top pharmacy website supplying genuine medicines
       </p>
       <a href="https://app.appsflyer.com/com.phonegap.rxpal?c=Footer?pid=Web">
-        <img src="img/GooglePlay.png" alt="playstore" className="storeicon"/>
+        <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://app.appsflyer.com/id982432643?c=Footer?pid=Web">
-        <img src="img/appstore.png" alt="appstore" className="storeicon"/>
+        <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
     <hr className="partition2"/>
     <h1 className="hdr">Covid Tracking Apps</h1>
     <div className="imgbox2">
-      <img src="img/tracking.jpg" alt="Covid tracking" style={{float: "right"}}/>
+      <img src={tracking} alt="Covid tracking" style={{float: "right"}}/>
       <p>Smartphone apps are playing a big role in the response to the Covid-19 pandemic. These apps are being used to track infected people, issue self-quarantine guidelines, provide latest communication to the citizens and ease the burden on
         healthcare staff. Throughout the world, from South Korea to Poland, the apps have been downloaded by millions of people. European Union is planning to roll out its own app, and has issued guidelines for the same. Apple and Google, the two
         Silicon Valley tech giants, have joined hands for the development of an app that will assist healthcare organizations.</p>
