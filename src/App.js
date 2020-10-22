@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Footer from './components/footer';
 
-import Home from './components/homepage'
+import Home from './components/home';
 
 import WorldStat from './components/worldStat'
 import IndiaStat from './components/indiaStat';
