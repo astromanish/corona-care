@@ -92,7 +92,7 @@ const Hope = () => {
       </ul>
       <p className="read-more">
         <a href="https://www.bbc.com/news/health-51665497" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
 
         </a>
       </p>
@@ -162,7 +162,7 @@ const Hope = () => {
           but was very apprehensive due to the coronavirus disease.</p>
         <p className="read-more">
           <a href="https://science.thewire.in/health/non-covid-19-patients-avoiding-hospitals-doctors/" className="button">
-            <button type="button" className="btn">Read more</button>
+            <button type="button" className="read-more-btn">Read More</button>
 
           </a>
         </p>
@@ -223,7 +223,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={ayushKwath} alt="ayush_kwath" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ayush Kwath</h2>
     <p>The ministry suggested drinking 1 cup or 150 ml of Ayush Kwath every day. It is a combination of medicinal herbs like four parts Tulsi (holy basil), two parts Dalchini (cinnamon), two parts Sunthi (ginger root) and one part Krishna Marich
@@ -232,7 +232,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={giloy} alt="giloy"/>
     <h2 style={{textAlign: "center"}}>Sanshamani Vati</h2>
     <p>
@@ -243,7 +243,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={aswagandha} alt="ashwagandha" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ashwagandha</h2>
     <p>The ministry has also advised taking 1-3 grams of ashwagandha powder twice daily for 15 days. Ashwagandha is an ancient medicinal herb that provides a range of health benefits to the body. Recovering from diseases like COVID-19 can be very
@@ -252,7 +252,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={amla} alt="amla"/>
     <h2 style={{textAlign: "center"}}>Amla</h2>
     <p>Another home remedy recommended by the ministry is to have 1 amla fruit or 1-3 grams of amla powder daily. Amla has long been touted for its ability to treat cold, cough and flu. It makes the respiratory system more robust and delivers relief
@@ -261,7 +261,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={mulethi} alt="meluthi" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Mulethi powder</h2>
     <p>Mulethi powder is another ancient medicinal herb prescribed by the health ministry to people who have a dry cough. The dosage recommended is 1-3 grams of mulethi powder twice every day with lukewarm water. Mulethi or liquorice is useful in
@@ -269,7 +269,7 @@ const Hope = () => {
       taste, you can add 1 tsp honey to your cup.</p>
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={turmericSalt} alt="turmeric_salt"/>
     <h2 style={{textAlign: "center"}}>Gargling with turmeric & salt
     </h2>
@@ -279,7 +279,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={turmeric} alt="turmeric" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Warm Turmeric milk</h2>
     <p>The next suggestion by the ministry is to drink warm milk with ½ tsp Turmeric every morning and evening. Turmeric milk has therapeutic properties that help the body in recovering from a disease or injury quickly. Haldi doodh is useful in
@@ -288,7 +288,7 @@ const Hope = () => {
 
   </div>
   
-  <div className="imgbox2">
+  <div >
     <img src={chyawanprash} alt="chyawanprash"/>
     <h2 style={{textAlign: "center"}}>Chyawanprash</h2>
     <p>Taking 1 tsp or 5 mg of Chyawanprash daily in the morning is recommended by the health ministry. Chyawanprash contains more than 40 ancient medicinal herbs that can stimulate immunity and help in recovering quickly from diseases. It was
@@ -343,7 +343,7 @@ const Hope = () => {
         you need assistance or seek immediate medical care if you have </p>
       <p className="read-more">
         <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
 
         </a>
       </p>
@@ -386,7 +386,7 @@ const Hope = () => {
         ability of the virus to be transmitted by people without symptoms is a major reason for the pandemic.</p>
       <p className="read-more">
         <a href="https://theconversation.com/infected-with-the-coronavirus-but-not-showing-symptoms-a-physician-answers-5-questions-about-asymptomatic-covid-19-137029" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
         </a>
       </p>
     </div>
@@ -447,7 +447,7 @@ const Hope = () => {
         acetaminophen instead,” he said.Dr. Larry Burchett, a California emergency physician, recommends 650 </p>
       <p className="read-more">
         <a href="https://www.healthline.com/health-news/how-to-treat-yourself-at-home-if-you-have-a-mild-case-of-coronavirus#Heres-a-shopping-list" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
         </a>
       </p>
     </div>
@@ -455,7 +455,7 @@ const Hope = () => {
   
   <div className="box">
     <h1 className="main-heading">Technology to the rescue.</h1>
-    <div className="imgbox2">
+    <div >
       <img src={setu} alt="Aarogya Setu"/>
       <h2 style={{textAlign:"center"}}>Aarogya Setu</h2>
       <p>
@@ -469,7 +469,7 @@ const Hope = () => {
       </a>
     </div>
     
-    <div className="imgbox2">
+    <div >
       <img src={oldoc} alt="tracking apps" style={{float:"right", height: "80%"}}/>
       <h2 style={{textAlign:"center"}}>Online Doctor</h2>
       <p>DocOnline Health provides innovative platform where users can talk to a doctor online via audio/video/chat at anytime & from anywhere!</p>
@@ -481,7 +481,7 @@ const Hope = () => {
       </a>
     </div>
     
-    <div className="imgbox2">
+    <div >
       <img src={pharm} alt="PharmeasyLogo"/>
       <h2 style={{textAlign:"center"}}>Online medication</h2>
       <p>
@@ -496,7 +496,7 @@ const Hope = () => {
     </div>
     
     <h1 className="main-heading">Covid Tracking Apps</h1>
-    <div className="imgbox2">
+    <div >
       <img src={tracking} alt="Covid tracking" style={{float: "right"}}/>
       <p>Smartphone apps are playing a big role in the response to the Covid-19 pandemic. These apps are being used to track infected people, issue self-quarantine guidelines, provide latest communication to the citizens and ease the burden on
         healthcare staff. Throughout the world, from South Korea to Poland, the apps have been downloaded by millions of people. European Union is planning to roll out its own app, and has issued guidelines for the same. Apple and Google, the two
@@ -524,7 +524,7 @@ const Hope = () => {
       </p>
       <p className="read-more">
         <a href="https://www.geospatialworld.net/blogs/popular-apps-covid-19/" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
         </a>
       </p>
 

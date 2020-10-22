@@ -12,35 +12,6 @@ iframe {
   border-radius: 15px;
 }
 
-.sidebar-box {
-  max-height: 180px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 1em;
-}
-
-.sidebar-box .read-more {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 30px 0;
-  background-image: linear-gradient(to bottom, transparent, #343a40);
-}
-
-.imgbox {
-  overflow: auto;
-  word-wrap: break-word;
-}
-
-.imgbox2 {
-  overflow: auto;
-  word-wrap: break-word;
-  margin-bottom: 100px;
-  margin-top: 100px;
-}
-
 .link {
   text-decoration: underline;
 }
@@ -49,26 +20,6 @@ iframe {
   width: 98%;
   padding: auto;
   border-radius: 30px;
-}
-.btn {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 14px;
-  background: #343a40;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #ffffff;
-  color: #343a40;
-}
-.storeicon {
-  float: right;
-  width: 20%;
 }
 
 @media only screen and (max-width: 768px) {

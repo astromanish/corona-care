@@ -319,7 +319,7 @@ const Bored = () => {
         pandemic, you may be experiencing several of these </p>
       <p className="read-more">
         <a href="https://www.helpguide.org/articles/depression/dealing-with-depression-during-coronavirus.htm" className="button">
-          <button type="button" className="btn">Read more</button>
+          <button type="button" className="read-more-btn">Read More</button>
         </a>
       </p>
     </div>

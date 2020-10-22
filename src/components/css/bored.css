@@ -5,37 +5,6 @@ img {
   border-radius: 20px;
 }
 
-a:visited {
-  color: white;
-}
-
-.sidebar-box {
-  max-height: 180px;
-  position: relative;
-  overflow: hidden;
-}
-
-.sidebar-box .read-more {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 30px 0;
-  /* "transparent" only works here because == rgba(0,0,0,0) */
-  background-image: linear-gradient(to bottom, transparent, #0f3057);
-}
-
-.imgbox {
-  overflow: auto;
-  word-wrap: break-word;
-}
-
-.heading {
-  text-align: center;
-}
-
 .link {
   text-decoration: underline;
 }
@@ -44,27 +13,6 @@ a:visited {
   width: 98%;
   padding: auto;
   border-radius: 30px;
-}
-.btn {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 14px;
-  background: #00587a;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #0099ff;
-  text-decoration: none;
-}
-
-.storeicon {
-  float: right;
-  width: 20%;
 }
 
 @media only screen and (max-width: 768px) {
