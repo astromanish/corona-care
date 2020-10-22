@@ -28,7 +28,6 @@ const App = () => {
   return (
     <BrowserRouter>
         <Header />
-        <hr />
         <div className="container">
           <Route exact path="/" component={Home} />
           <Route exact path="/status/world" component={WorldStat} />
@@ -52,7 +51,6 @@ const App = () => {
             </AnswerProvider>
           </QuestionProvider>
         </div>
-        <hr />
         <Footer />
     </BrowserRouter>
   );

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +8,49 @@
 }
 
 body {
-  color: #727272;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 .container {
-  max-width: 900px;
   width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100%;
   margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 0.8em grey;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.icon {
+  color: blue;
+}
+
+/* ?????????????? */
+
+div {
+  overflow: auto;
 }

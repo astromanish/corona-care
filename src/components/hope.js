@@ -27,43 +27,43 @@ import tracking from "./img/tracking.jpg";
 const Hope = () => {
     return ( 
         <>
-           <div className="artcl">
+           <div className="box">
     <div className="imgbox">
       <iframe src="https://www.youtube.com/embed/2JsWf-2nN1Y" style={{float:"left"}}/>
-      <h1 className="hdr2">Are you infected?</h1>
+      <h1 className="main-heading2">Are you infected?</h1>
     </div>
-    <hr className="partition2"/>
+    
     <div className="imgbox">
       <iframe src="https://www.youtube.com/embed/U8r3oTVMtQ0" style={{float:"right"}}/>
-      <h1 className="hdr2">Covid-19 Symptoms Timetable</h1>
+      <h1 className="main-heading2">Covid-19 Symptoms Timetable</h1>
     </div>
-    <hr className="partition2"/>
+    
     <div className="imgbox">
 
       <iframe src="https://www.youtube.com/embed/xTvd7oAEyhs" style={{float:"left"}}/>
-      <h1 className="hdr2">Home care tips</h1>
+      <h1 className="main-heading2">Home care tips</h1>
     </div>
-    <hr className="partition2"/>
+    
     <div className="imgbox">
 
       <iframe src="https://www.youtube.com/embed/S3d66JvDYvk" style={{float:"right"}}/>
-      <h1 className="hdr2">Do you need to go to the Hospital?</h1>
+      <h1 className="main-heading2">Do you need to go to the Hospital?</h1>
     </div>
 
   </div>
-  <hr className="partition2"/>
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Vaccine Updates</h1>
+      <h1 className="main-heading">Vaccine Updates</h1>
       <img src={vaccine} alt="vaccine"/>
       <p>Coronavirus still poses a significant threat, but there are no vaccines proven to protect the body against the disease it causes - Covid-19.
         However there are around 40 different coronavirus vaccines in clinical trials - including one being developed by the University of Oxford that is already in an advanced stage of testing.</p>
 
     </div>
-    <h2>Why is a coronavirus vaccine important?</h2>
+    <h2 className="heading">Why is a coronavirus vaccine important?</h2>
     <p>The virus spreads easily, and the majority of the world's population is still vulnerable to it. A vaccine would provide some protection by training people's immune systems to fight the virus so they should not become sick.
       This would allow lockdowns to be lifted more safely, and social distancing to be relaxed.</p>
-    <h2>What sort of progress is being made?</h2>
+    <h2 className="heading">What sort of progress is being made?</h2>
     <p>Research is happening at breakneck speed. About 240 vaccines are in early development, with 40 in clinical trials and nine already in the final stage of testing on thousands of people.</p>
     <ul>
       <li>Trials of the Oxford vaccine show it can trigger an immune response, and a deal has been signed with AstraZeneca to supply 100 million doses in the UK alone.</li>
@@ -73,13 +73,13 @@ const Hope = () => {
       <li>Other completely new approaches to vaccine development are in human trials.</li>
     </ul>
     <p>However, no-one knows how effective any of these vaccines will be.</p>
-    <h2>When will we have a coronavirus vaccine?</h2>
+    <h2 className="heading">When will we have a coronavirus vaccine?</h2>
     <p>A vaccine would normally take years, if not decades, to develop. Researchers hope to achieve the same amount of work in only a few months.
       Most experts think a vaccine is likely to become widely available by mid-2021, about 12-18 months after the new virus, known officially as Sars-CoV-2, first emerged.
       That would be a huge scientific feat, and there are no guarantees it will work.
       But scientists are optimistic that, if trials are successful, then a small number of people - such as healthcare workers - may be vaccinated before the end of this year.
       It is worth noting that four coronaviruses already circulate in human beings. They cause common cold symptoms and we don't have vaccines for any of them.</p>
-    <h2>What still needs to be done?</h2>
+    <h2 className="heading">What still needs to be done?</h2>
     <p>Multiple research groups have designed potential vaccines. However there is much more work to do.
     </p>
     <div className="sidebar-box">
@@ -99,10 +99,10 @@ const Hope = () => {
 
     </div>
   </div>
-  <hr className="partition"/>
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">India-Russia collaboration for Sputnik-V</h1>
+      <h1 className="main-heading">India-Russia collaboration for Sputnik-V</h1>
       <img src={indiaRus} alt="idia-russia flag" style={{float:"right"}}/>
       <p style={{marginTop :"150px"}}>India and Russia are in talks for collaboration to manufacture Sputnik V – the anti-coronavirus vaccine launched by Moscow earlier this month – and for approval to conduct phase three trials, Union Health Secretary Rajesh Bhushan said on
         Tuesday. Bhushan is also the co-chair of the national Covid-19 vaccine administration task force.</p>
@@ -127,10 +127,10 @@ const Hope = () => {
       and killed 8,18,137 others, according the Johns Hopkins University’s tracker. Over 1.54 crore people across the world have recovered from the infection.</p>
 
   </div>
-  <hr className="partition"/>
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Fear among Non-Covid patients</h1>
+      <h1 className="main-heading">Fear among Non-Covid patients</h1>
       <img src={fear} alt="fear"/>
       <p>New Delhi: Due to the coronavirus pandemic, patients suffering from critical diseases like cancer and those requiring surgeries are delaying hospital visits and thereby endangering their health and even risking their lives, according to some
         doctors.
@@ -157,7 +157,7 @@ const Hope = () => {
       <p>“Ultimately his infection increased and he ended up in a critical condition and after surgery had to stay in the hospital for a week. Had he continued treatment when he was diagnosed, he could have been discharged in two days,” he
         said.Sharma said patients are not reaching out and consulting doctors, which is leading to situations like these and opined that people will have to learn to live with coronavirus.</p>
       <div className="sidebar-box">
-        <h2>Patients delaying treatment</h2>
+        <h2 className="heading">Patients delaying treatment</h2>
         <p>Dr Chandragouda Dodagoudar, director of medical oncology at Aakash Healthcare in Dwarka, shared a case of a 65-year-old patient who had stage 2 lymphoma. The patient first visited the health facility in March and was advised chemotherapy
           but was very apprehensive due to the coronavirus disease.</p>
         <p className="read-more">
@@ -169,10 +169,10 @@ const Hope = () => {
       </div>
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Hospital Capacity</h1>
+      <h1 className="main-heading">Hospital Capacity</h1>
       <img src={hospital} alt="hospital"/>
       <p>The coronavirus disease 2019 (COVID-19) news coming from Italy should be sobering to health system leaders throughout the world. We are witnessing an advanced health system stretched beyond its capacity. When the capacity of the system is
         exceeded, rationing decisions may need to be made that extend well beyond patients with COVID-19. On March 11, the Italian College of Anesthesia, Analgesia, Resuscitation, and Intensive Care was forced to publish guidelines for rationing
@@ -180,7 +180,7 @@ const Hope = () => {
         average patient loads, not epidemics. Observations from Italy demonstrate what is at stake. When containment fails, the exponential growth of cases can transform a public health emergency into an operational crisis</p>
 
     </div>
-    <h2>What Can We Learn?</h2>
+    <h2 className="heading">What Can We Learn?</h2>
     <p>Operationally, what can be gleaned from the dire situation in Italy to avoid a similar fate in other countries? The geographic and temporal clustering of outbreaks can overwhelm a health care system. Most Italian cases and deaths have been
       concentrated in the northern region of Lombardy, which should concern US states working to manage their own clusters, including Washington and New York. President Trump has imposed sweeping travel restrictions on visitors from China and Europe,
       but these restrictions will have little effect in US regions with widespread community transmission. Public containment measures implemented in recent days will take a week or longer to have an effect; with an incubation period of 2 to 7 days2
@@ -191,7 +191,7 @@ const Hope = () => {
       Because of the long treatment time (approximately 13 days), the number of new patients that can be accommodated per day during an extended outbreak is low. Admitting more than 2.3 patients per day (30 beds divided by 13 days) with respiratory
       failure will lead to an unstable system and queues. Italy reported 7087 new cases during a 2-day period between March 14 and March 15, 2020. With as many as 15% of documented infections resulting in severe disease,2 rationing decisions may
       quickly be required.</p>
-    <h2>How Can We Prepare?</h2>
+    <h2 className="heading">How Can We Prepare?</h2>
     <p>By observing regional outbreaks in the context of Italy’s case growth, we can start to model and anticipate both what the ultimate capacity to provide care will be and when that capacity will be exceeded. Case growth rates of 25% to 35% per
       day are commonplace among affected regions. Based on trends in known cases in a specific locale, we can start to model caseloads under different scenarios. Tools designed for influenza epidemics, such as the Centers for Disease Control and
       Prevention FluSurge, can offer useful estimates. Preparations for expanding capacity should already be underway to address growing regional clusters of transmission (ie, so-called hotspots). Many hospitals have mass casualty protocols for
@@ -203,7 +203,7 @@ const Hope = () => {
     <p>Hospital administrators need to start preparing for worst case scenarios now, and thankfully, most are doing so. Toner and Waldhorn6 have assembled a comprehensive list of preventive actions. This planning and response will require a
       multidisciplinary effort; physicians, nurses, respiratory therapists, pharmacists, environmental services staff, supply chain managers, and many others possess needed expertise. Messaging from hospital leadership must be communicated often and
       clearly. The protection of staff from infection must remain a high priority.</p>
-    <h2>What Lies Ahead?</h2>
+    <h2 className="heading">What Lies Ahead?</h2>
     <p>Some countries, such as Taiwan,7 have been successful at combating the virus through aggressive testing and containment measures. South Korea, while initially inundated with patients from a rapidly spreading cluster, has successfully mitigated
       spread (at least temporarily) with minimal associated mortality. These examples provide encouragement that a well-executed public health response can minimize the potential for operational crises. The common themes in success have been massive
       testing, adaptive policy recommendations for different regions, and communication by public officials that is constant, transparent, and honest. The public needs to trust public officials and see the good and bad news every day.</p>
@@ -212,17 +212,17 @@ const Hope = () => {
       determine whether history regards 2020 as a great public health achievement or an epic failure of our public health and health care infrastructure.</p>
 
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Home Remedies</h1>
+      <h1 className="main-heading">Home Remedies</h1>
       <img src={homeRemedies} alt="home_remedies" className="bigimg"/>
       <p>The Union Health Ministry on Sunday issued several guidelines to manage COVID-19 and provide holistic care to those who are healing from the disease. Apart from general advises such as practising yoga, seeking counselling, having enough
         water and a healthy diet, the ministry also released a long list of home remedies for boosting immunity and making a quick recovery. Here is the complete list of home remedies released by the health ministry and how they can help in
         strengthening immunity and proper recovery post-COVID-19.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={ayushKwath} alt="ayush_kwath" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ayush Kwath</h2>
@@ -231,7 +231,7 @@ const Hope = () => {
       water once or twice a day. You can also add raisins, lemon juice or jaggery to enhance the taste. This combination is said to not only boost immunity but also promote general well-being.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={giloy} alt="giloy"/>
     <h2 style={{textAlign: "center"}}>Sanshamani Vati</h2>
@@ -242,7 +242,7 @@ const Hope = () => {
     </p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={aswagandha} alt="ashwagandha" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Ashwagandha</h2>
@@ -251,7 +251,7 @@ const Hope = () => {
       You can also take ashwagandha supplements of 500 mg twice a day.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={amla} alt="amla"/>
     <h2 style={{textAlign: "center"}}>Amla</h2>
@@ -260,7 +260,7 @@ const Hope = () => {
       detoxify your system.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={mulethi} alt="meluthi" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Mulethi powder</h2>
@@ -268,7 +268,7 @@ const Hope = () => {
       providing quick relief from cough and cold. You can also make a cold and cough relief tea at home by boiling 1-inch mulethi root, 1 tsp grated ginger, 3-4 black peppercorns in 2 cups of water and reducing it to half. If you cannot bear the
       taste, you can add 1 tsp honey to your cup.</p>
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={turmericSalt} alt="turmeric_salt"/>
     <h2 style={{textAlign: "center"}}>Gargling with turmeric & salt
@@ -278,7 +278,7 @@ const Hope = () => {
       cup of warm water and gargle.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={turmeric} alt="turmeric" style={{float:"right"}}/>
     <h2 style={{textAlign: "center"}}>Warm Turmeric milk</h2>
@@ -287,7 +287,7 @@ const Hope = () => {
       the potency of the drink.</p>
 
   </div>
-  <hr className="partition2"/>
+  
   <div className="imgbox2">
     <img src={chyawanprash} alt="chyawanprash"/>
     <h2 style={{textAlign: "center"}}>Chyawanprash</h2>
@@ -296,37 +296,37 @@ const Hope = () => {
 
   </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
       <img src={myth2} alt="mythbuster" style={{width:"40%"}}/>
-      <h1 className="hdr">MythBusters</h1>
+      <h1 className="main-heading">MythBusters</h1>
     </div>
-    <h2>FACT: Vitamin and mineral supplements cannot cure COVID-19 </h2>
+    <h2 className="heading">FACT: Vitamin and mineral supplements cannot cure COVID-19 </h2>
     <p>Micronutrients, such as vitamins D and C and zinc, are critical for a well-functioning immune system and play a vital role in promoting health and nutritional well-being. There is currently no guidance on the use of micronutrient supplements
       as a treatment of COVID-19.
       WHO is coordinating efforts to develop and evaluate medicines to treat COVID-19.</p>
-    <h2>FACT: Studies show hydroxychloroquine does not have clinical benefits in treating COVID-19 </h2>
+    <h2 className="heading">FACT: Studies show hydroxychloroquine does not have clinical benefits in treating COVID-19 </h2>
     <p>Hydroxychloroquine or chloroquine, a treatment for malaria, lupus erythematosus, and rheumatoid arthritis, has been under study as a possible treatment for COVID-19. Current data shows that this drug does not reduce deaths among hospitalised
       COVID-19 patients, nor help people with moderate disease.*
       The use of hydoxychloroquine and chloroquine is accepted as generally safe for patients with malaria and autoimmune diseases, but its use where not indicated and without medical supervision can cause serious side effects and should be avoided.
     </p>
     <p>* More decisive research is needed to assess its value in patients with mild disease or as pre- or post-exposure prophylaxis in patients exposed to COVID-19.</p>
-    <h2>FACT: People should NOT wear masks while exercising </h2>
+    <h2 className="heading">FACT: People should NOT wear masks while exercising </h2>
     <p>People should NOT wear masks when exercising, as masks may reduce the ability to breathe comfortably.
       Sweat can make the mask become wet more quickly which makes it difficult to breathe and promotes the growth of microorganisms. The important preventive measure during exercise is to maintain physical distance of at least one meter from others.
     </p>
-    <h2>FACT: The likelihood of shoes spreading COVID-19 is very low</h2>
+    <h2 className="heading">FACT: The likelihood of shoes spreading COVID-19 is very low</h2>
     <p>The likelihood of COVID-19 being spread on shoes and infecting individuals is very low. As a precautionary measure, particularly in homes where infants and small children crawl or play on floors, consider leaving your shoes at the entrance of
       your home. This will help prevent contact with dirt or any waste that could be carried on the soles of shoes.
     </p>
-    <h2>FACT: The coronavirus disease (COVID-19) is caused by a virus, NOT by bacteria</h2>
+    <h2 className="heading">FACT: The coronavirus disease (COVID-19) is caused by a virus, NOT by bacteria</h2>
     <p>The virus that causes COVID-19 is in a family of viruses called Coronaviridae. Antibiotics do not work against viruses.
 
       Some people who become ill with COVID-19 can also develop a bacterial infection as a complication. In this case, antibiotics may be recommended by a health care provider.
 
       There is currently no licensed medication to cure COVID-19. If you have symptoms, call your health care provider or COVID-19 hotline for assistance.</p>
-    <h2>FACT: The prolonged use of medical masks* when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency
+    <h2 className="heading">FACT: The prolonged use of medical masks* when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency
 
     </h2>
     <p>The prolonged use of medical masks can be uncomfortable. However, it does not lead to CO2 intoxication nor oxygen deficiency. While wearing a medical mask, make sure it fits properly and that it is tight enough to allow you to breathe
@@ -334,11 +334,11 @@ const Hope = () => {
 
       * Medical masks (also known as surgical masks) are flat or pleated; they are affixed to the head with straps or have ear loops.</p>
 
-    <h2>FACT: Most people who get COVID-19 recover from it</h2>
+    <h2 className="heading">FACT: Most people who get COVID-19 recover from it</h2>
     <p>Most people who get COVID-19 have mild or moderate symptoms and can recover thanks to supportive care. If you have a cough, fever and difficulty breathing seek medical care early - call your health facility by telephone first. If you have
       fever and live in an area with malaria or dengue seek medical care immediately.</p>
     <div className="sidebar-box">
-      <h2>FACT: Thermal scanners CANNOT detect COVID-19</h2>
+      <h2 className="heading">FACT: Thermal scanners CANNOT detect COVID-19</h2>
       <p>Thermal scanners are effective in detecting people who have a fever (i.e. have a higher than normal body temperature). They cannot detect people who are infected with COVID-19. There are many causes of fever. Call your healthcare provider if
         you need assistance or seek immediate medical care if you have </p>
       <p className="read-more">
@@ -350,10 +350,10 @@ const Hope = () => {
 
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Asymptomatic Covid patients</h1>
+      <h1 className="main-heading">Asymptomatic Covid patients</h1>
       <img src={asymp} alt="asymptomatic"/>
       <p>Blood tests that check for exposure to the coronavirus are starting to come online, and preliminary findings suggest that many people have been infected without knowing it. Even people who do eventually experience the common symptoms of
         COVID-19 don’t start coughing and spiking fevers the moment they’re infected.
@@ -364,7 +364,7 @@ const Hope = () => {
 
 
     </div>
-    <h2>How common is it for people to contract and fight off viruses without knowing it?</h2>
+    <h2 className="heading">How common is it for people to contract and fight off viruses without knowing it?</h2>
     <p>In general, having an infection without any symptoms is common. Perhaps the most infamous example was Typhoid Mary, who spread typhoid fever to other people without having any symptoms herself in the early 1900s.
       My colleagues and I have found that many infections are fought off by the body without the person even knowing it. For example, when we carefully followed children for infection by the parasite Cryptosporidia, one of the major causes of
       diarrhea, almost half of those with infections showed no symptoms at all.
@@ -373,11 +373,11 @@ const Hope = () => {
       In the case of the flu, estimates are that anywhere from 5% to 25% of infections occur with no symptoms.
       For the most part, symptoms are actually a side effect of fighting off an infection. It takes a little time for the immune system to rally that defense, so some cases are more aptly considered presymptomatic rather than asymptomatic.
     </p>
-    <h2>How can someone spread coronavirus if they aren’t coughing and sneezing?</h2>
+    <h2 className="heading">How can someone spread coronavirus if they aren’t coughing and sneezing?</h2>
     <p>Everyone is on guard against the droplets that spray out from a coronavirus patient’s cough or sneeze. They’re a big reason public health officials have suggested everyone should wear masks.
       But the virus also spreads through normal exhalations that can carry tiny droplets containing the virus. A regular breath may spread the virus several feet or more.
       Spread could also come from fomites – surfaces, such as a doorknob or a grocery cart handle, that are contaminated with the coronavirus by an infected person’s touch.</p>
-    <h2>What’s known about how contagious an asymptomatic person might be?
+    <h2 className="heading">What’s known about how contagious an asymptomatic person might be?
     </h2>
     <p>No matter what, if you’ve been exposed to someone with COVID-19, you should self-quarantine for the entire 14-day incubation period. Even if you feel fine, you’re still at risk of spreading the coronavirus to others.
     </p>
@@ -391,10 +391,10 @@ const Hope = () => {
       </p>
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Home Treatment</h1>
+      <h1 className="main-heading">Home Treatment</h1>
       <img src={homet} alt="hometreatment" style={{float: "right"}}/>
       <p>Many Americans have stocked up on food and other supplies in preparation for social distancing.
 
@@ -410,7 +410,7 @@ const Hope = () => {
 
 
     </div>
-    <h2>Create an action plan</h2>
+    <h2 className="heading">Create an action plan</h2>
     <p>“Preparing for a period of home quarantine means making a household plan of action as well as stocking supplies for the duration of the isolation period,” Dr. Lisa Ide, chief medical officer of the national virtual health platform Zipnosis,
       told Healthline.
       “Make sure that you have a list of emergency contacts, a plan to communicate with family, friends, and co-workers, and know-how to get food delivered if possible,” she said.
@@ -421,8 +421,8 @@ const Hope = () => {
       “Fruit and vegetables provide loads of essential nutrients and there are ways to extend their shelf-life and make them more convenient,” notes the website Huel, which markets nutritionally complete food with a 12-month shelf life. “For example,
       soups and sauces can be made straight away and then frozen. You can make a concentrated stock which you can then freeze in ice cube trays and, voila, homemade, low-salt stock cubes.”
     </p>
-    <h2>Here's a shopping list</h2>
-    <h3>Clean Water</h3>
+    <h2 className="heading">Here's a shopping list</h2>
+    <h3 className="sub-heading">Clean Water</h3>
     <p>Water should be at the top of the list of supplies you’ll need in the event you contract COVID-19.
       “COVID-19 is a viral infection and like most viral infections, treatment is all about comfort and keeping well enough while your body heals,” Dr. Roy Benaroch, a clinical assistant professor of pediatrics at Emory University and a pediatrician
       with a private practice in Roswell, Georgia, told Healthline.
@@ -439,7 +439,7 @@ const Hope = () => {
       (About 20 percent of this fluid intake comes from foods).
       In the minority of cases where COVID-19 symptoms include acute gastroenteritis, solutions such as Pedialyte can help prevent dehydration. Sports drinks like Gatorade are another option
     </p>
-    <h3>Pain medication</h3>
+    <h3 className="sub-heading">Pain medication</h3>
     <div className="sidebar-box">
       <p>“The most useful medicine is something to decrease headaches, body aches, and fever, like acetaminophen (Tylenol),” said Benaroch.
 
@@ -452,9 +452,9 @@ const Hope = () => {
       </p>
     </div>
   </div>
-  <hr className="partition"/>
-  <div className="artcl">
-    <h1 className="hdr">Technology to the rescue.</h1>
+  
+  <div className="box">
+    <h1 className="main-heading">Technology to the rescue.</h1>
     <div className="imgbox2">
       <img src={setu} alt="Aarogya Setu"/>
       <h2 style={{textAlign:"center"}}>Aarogya Setu</h2>
@@ -468,7 +468,7 @@ const Hope = () => {
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
-    <hr className="partition2"/>
+    
     <div className="imgbox2">
       <img src={oldoc} alt="tracking apps" style={{float:"right", height: "80%"}}/>
       <h2 style={{textAlign:"center"}}>Online Doctor</h2>
@@ -480,7 +480,7 @@ const Hope = () => {
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
-    <hr className="partition2"/>
+    
     <div className="imgbox2">
       <img src={pharm} alt="PharmeasyLogo"/>
       <h2 style={{textAlign:"center"}}>Online medication</h2>
@@ -494,8 +494,8 @@ const Hope = () => {
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
     </div>
-    <hr className="partition2"/>
-    <h1 className="hdr">Covid Tracking Apps</h1>
+    
+    <h1 className="main-heading">Covid Tracking Apps</h1>
     <div className="imgbox2">
       <img src={tracking} alt="Covid tracking" style={{float: "right"}}/>
       <p>Smartphone apps are playing a big role in the response to the Covid-19 pandemic. These apps are being used to track infected people, issue self-quarantine guidelines, provide latest communication to the citizens and ease the burden on
@@ -504,20 +504,20 @@ const Hope = () => {
     </div>
     <p>Technology has come to the rescue in diagnosing those affected, identifying hotspots and getting real-time updates. While there is an issue of data privacy at stake, most of the app developers are now trying to put mechanisms in place to
       safeguard user privacy. Have a look at some of the most popular smartphone apps to track Covid-19 outbreak.</p>
-    <h2>TraceTogether</h2>
+    <h2 className="heading">TraceTogether</h2>
     <p>TraceTogether is a popular smartphone app that can be downloaded by anyone with a Sinagpore mobile number and a Bluetooth-enabled smartphone. It is a contact tracing app that uses Bluetooth to track infected people and notify those who were in
       close proximity to them during the past 15 days. The app doesn’t collect data about GPS location or WiFI/mobile network. When two people using the app are close to each other, both phones will use Bluetooth to exchange a Temporary ID. This
       Temporary ID is generated by encrypting the User ID with a private key held by the Ministry of Health (MOH). It can only be decrypted by MOH, and does not reveal your identity or the other person’s identity. The app has been developed by
       Developed by the Government Technology Agency (GovTech) in collaboration with MOH, and it has become a prototype for many other contact tracing apps in other parts of the world.</p>
-    <h2>CovidWatch</h2>
+    <h2 className="heading">CovidWatch</h2>
     <p>Developed in collaboration with Stanford University, the app empowers people to protect themselves and their communities without the need of surrendering their privacy. It uses Bluetooth signals to detect users when they are in proximity to
       each other and alerts them anonymously if they were in contact with someone who has tested positive. A distinguishing feature of the app is that any third party, including the government won’t be able to track who was exposed by whom. It has
       been among the first apps to release an open-source protocol for privacy-preserving, decentralized Bluetooth contact tracing.</p>
-    <h2>HaMagen</h2>
+    <h2 className="heading">HaMagen</h2>
     <p>Launched by the Health Ministry of Israel, the app uses contact tracing to contain the spread of the deadly contagion. The app allows users to know if in the past 15 days they were close to anyone who has been diagnosed with the virus. Once a
       user installs the app, his movements are tracked using location technology and the information fetched is compared with the ministry data on the whereabouts of those who have been diagnosed. If it transpires that a particular user was indeed in
       proximity with an infected person, the app redirects the person to the health ministry website where he can register for self-quarantine.</p>
-    <h2>The Corona DataSpende</h2>
+    <h2 className="heading">The Corona DataSpende</h2>
     <div className="sidebar-box">
       <p>This German smartwatch app monitors the spread of coronavirus by collecting crucial signs – pulse rate, body temperature, sleep patterns – from volunteers wearing a smartwatch or a fitness tracker. It checks whether they have developed any
         Covid-19 symptoms or not. The results are then portrayed on an online interactive map that makes it possible for health authorities to take stock of the situation and find out the hotspots.It checks whether they have

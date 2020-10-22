@@ -15,9 +15,9 @@ import hope1 from './img/hope1.jpg';
 const Bored = () => {
     return (
         <>
-            <div className="artcl">
+            <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Best Online Games To Play In Quarantine</h1>
+      <h1 className="main-heading">Best Online Games To Play In Quarantine</h1>
       <img src={kidsPlaying} alt="kidsplaying" className="imgleft"/>
       <p>
         Not meeting your friends and missing fun days hanging out with them, is one of the biggest boring disadvantages of quarantine forced upon us by this COVID-19 pandemic. Thanks to our cell phones and the internet, we have plenty of ways to pass
@@ -26,24 +26,24 @@ const Bored = () => {
       </p>
 
     </div>
-    <h2>
+    <h2 className="heading">
       Here, are some of the wonderful online games to play with friends in Quarantine
     </h2>
-    <h3>
+    <h3 className="sub-heading">
       Houseparty Games:
     </h3>
     <p>
       Houseparty is a group video calling app, which is just the same as other video calling apps. The only characteristic that makes it different than others is people joining video calls can play games together. There are four types of games
       available on Houseparty which are, Heads Up!, Chips, Trivia, and Quick Draw. The person who invites people can initiate new arcade games on the video. Participants just need to roll over the dice.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Monopoly:
     </h3>
     <p>
       Classic Monopoly never gets old. While there is an unwritten rule to have this game in every house, it is now possible to play a game online with friends. If you want to play it on your laptops, then it is free of any cost. For the mobile app
       version, there is a charge of $3.99. The mobile version is suitable for Android as well as iOS. This new version is very attractive and engaging for every user. For PC, users can download the game from the POGO website.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Online Casinos:
     </h3>
     <p>
@@ -53,28 +53,28 @@ const Bored = () => {
 
       During quarantine and lockdown, this creative option of online casino sites is getting popular. Several Indian Casinos websites are attracting multiple visitors and users.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Pokemon Go:
     </h3>
     <p>
       This game has created hype and buzz amongst the youngsters. It changed the future of AR-based gaming. Considering lockdown situations caused due to COVID-19 pandemic, the game developers have made changes in the game tracking GPS, limiting the
       travel to your backyards and garden compounds. You don’t have to roam around the city to gather pokemon. If you create lists of friends in the game, you can exchange some pokemon or even gift them.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Cards Against Humanity:
     </h3>
     <p>
       Uno or its newer version i.e. Cards Against Humanity can now be played online. You can challenge your friends online, and ask them to answer funny questions to move ahead in the next rounds. As you know there are two sets of cards in the game.
       There are black cards with fill-in the box options or questions and white cards with nouns that fill blank and answer questions from black cards. Many players like these games because they are very light-hearted to play and enlighten your mood.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Skribble:
     </h3>
     <p>
       Skribble is an online multiplayer drawing and guessing game which is available free of cost. Players need to draw their given words and others need to guess the drawing in several rounds. The person, who gets most of the points at the end, wins
       the game. So, one needs to draw a picture in 80 seconds from three options you get, and the other one needs to recognize the object drawn. Watching terrific drawings by your friends can be a perfect time pass.
     </p>
-    <h3>
+    <h3 className="sub-heading">
       Codenames:
     </h3>
     <p>
@@ -83,12 +83,12 @@ const Bored = () => {
     </p>
 
   </div>
-  <hr className="partition" />
+  
 
-  <div className="artcl">
+  <div className="box">
     <div className="imgbox">
 
-      <h1 className="hdr">Skills To Learn</h1>
+      <h1 className="main-heading">Skills To Learn</h1>
       <img src={skills} alt="skills" className="imgleft" style={{float: "right"}}/>
 
       <p>
@@ -100,10 +100,10 @@ const Bored = () => {
     </div>
 
 
-    <h3>
+    <h3 className="sub-heading">
       Here are a few ideas to help you get started.
     </h3>
-    <h2>
+    <h2 className="heading">
       New Language.
     </h2>
     <p>
@@ -112,7 +112,7 @@ const Bored = () => {
       Say you’re a keen traveller, for instance. By being able to speak the language of a certain country, you will not only be able to engage in more meaningful conversations with the locals, but you’ll make yourself more employable at the same
       time.
     </p>
-    <h2>
+    <h2 className="heading">
       First Aid
     </h2>
     <p>
@@ -123,7 +123,7 @@ const Bored = () => {
       While in-person courses from accredited trainers provide you with a more detailed level of knowledge, there are a number of ways to learn how to administer first aid at home – whether it be for a sports-related injury, post-operative pain, a
       cut, scrape, burn, or sprain.
     </p>
-    <h2>
+    <h2 className="heading">
       Cooking
     </h2>
     <p>
@@ -132,7 +132,7 @@ const Bored = () => {
       With so much free time available on your hands, now is the ideal time to don the apron and get creative in the kitchen.
       If you’ve got a sweet tooth, why not try your hand at baking some cookies or brownies. Or, if you fancy yourself as a bit of a kitchen whizz, test your skills by cooking recipes and ingredients you’ve not tried before.
     </p>
-    <h2>
+    <h2 className="heading">
       Gardening
     </h2>
     <p>
@@ -142,7 +142,7 @@ const Bored = () => {
       Growing your own beautiful flowers and plants can also feel equally rewarding, truly bringing a touch of className and beauty to your home’s interior and garden. If you’ve not got the greatest green fingers already, perhaps now is the ideal time to
       learn how to care for plants effectively.
     </p>
-    <h2>
+    <h2 className="heading">
       Textiles.
     </h2>
     <p>
@@ -150,7 +150,7 @@ const Bored = () => {
       After all, there’s nothing quite like wearing a nice, warm woollen scarf or blanket you’ve created by hand yourself, or repairing a coat back to its former glory.
       Just like gardening, knowing your way around textiles can be an incredibly rewarding and useful skill to know.
     </p>
-    <h2>
+    <h2 className="heading">
       Finances.
     </h2>
     <p>
@@ -160,7 +160,7 @@ const Bored = () => {
       Whether you’d rather do a quick online course in the basics of accounting, or simply read some useful guides from websites like MoneySavingExpert.com, knowing your way around your finances could free up funds to pay for some of the other life
       skill ideas featured on this list.
     </p>
-    <h2>
+    <h2 className="heading">
       New Hobby.
     </h2>
     <p>
@@ -172,11 +172,11 @@ const Bored = () => {
     </p>
 
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
 
     <div className="imgbox">
-      <h1 className="hdr">Indoor Games to play during Lockdown</h1>
+      <h1 className="main-heading">Indoor Games to play during Lockdown</h1>
 
 
       <img src={games} alt="games" className="imgright"/>
@@ -189,20 +189,20 @@ const Bored = () => {
         play with those you are spending time with in the house, not only do they help pass the time, but are great fun!
       </p>
     </div>
-    <h2>
+    <h2 className="heading">
       Lava
     </h2>
     <p>
       A fun game which was played almost everytime when we would visit our friends houses, Lava. Participants are not supposed to stay on the floor while the game is in progress, and station themselves on the bed, soda, chairs. The trick is that they
       cannot stay in one position for too long, and if caught on the floor while changing their position, are out of the game.
     </p>
-    <h2>
+    <h2 className="heading">
       Dumb Charades
     </h2>
     <p>
       Probably the most popular indoor game of all time, it helps if you are a good actor or are a movie buff. Two teams are formed, and the turn by turn they enact names of movies which are to be guessed by the other team
     </p>
-    <h2>
+    <h2 className="heading">
       Musical chairs
     </h2>
     <p>
@@ -210,13 +210,13 @@ const Bored = () => {
       stops
       are supposed to sit down. The one who cannot find a place when the music stops, is out.
     </p>
-    <h2>
+    <h2 className="heading">
       Stone Paper scissor
     </h2>
     <p>
       We’ve all played this hand gesture game to kill time while growing up- but just so that you remember the basics- paper is stronger than the stone, stone can break the scissor and scissor can cut the paper.
     </p>
-    <h2>
+    <h2 className="heading">
       Hide and seek
     </h2>
     <p>
@@ -225,11 +225,11 @@ const Bored = () => {
     </p>
 
   </div>
-  <hr className="partition" />
+  
 
-  <div className="artcl">
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Self Care</h1>
+      <h1 className="main-heading">Self Care</h1>
       <img src={selfCare} alt="selfcare" style={{width : "25%", marginRight: "20px" ,float: "right"}}/>
       <p style={{paddingTop:"40px"}}>
         If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
@@ -239,9 +239,9 @@ const Bored = () => {
       </p>
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
-    <h1 className="hdr">Covid Heroes</h1>
+  
+  <div className="box">
+    <h1 className="main-heading">Covid Heroes</h1>
     <img src={warriors} alt=""/>
     <p>
       Given site https://covidwarriors.gov.in/ not working
@@ -251,10 +251,10 @@ const Bored = () => {
     </div>
 
   </div>
-  <hr className="partition"/>
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Our Role as Individuals !</h1>
+      <h1 className="main-heading">Our Role as Individuals !</h1>
       <img src={hero} alt="individual" style={{float: "right"}}/>
       <p style={{paddingTop: "80px"}}>
         We are all impacted by COVID19 – A.K.A. the Coronavirus – one way or another. No matter where we are in the world and where in the age spectrum we sit. However, some of us are at higher risk – for instance, older people and people with severe
@@ -263,32 +263,32 @@ const Bored = () => {
       </p>
     </div>
 
-    <h2>Follow simple and routine World Health Organization <span><a href="https://youtu.be/1APwq1df6Mw" className="link">WHO Guidelines</a></span></h2>
+    <h2 className="heading">Follow simple and routine World Health Organization <span><a href="https://youtu.be/1APwq1df6Mw" className="link">WHO Guidelines</a></span></h2>
     <p> Properly wash your hands more often, avoid crowded spaces, avoid handshaking, if you are sick wear a mask and seek medical attention immediately.</p>
-    <h2>Educate your families, friends and community</h2>
+    <h2 className="heading">Educate your families, friends and community</h2>
     <p>Spread community awareness online and offline. For example look at how the Scouts are raising community awareness around the world and how the Ndlovu Youth Choir in South Africa used music and dance to dismantle myths about Coronavirus.
       Unfortunately, fake news spreads so fast in times of uncertainty. So be responsible. Verify every news and information before sharing. Be a source of calm during this storm.</p>
-    <h2>Volunteer</h2>
+    <h2 className="heading">Volunteer</h2>
     <p>Find opportunities to volunteer in your community. If there are older people or immunocompromised people help them out. Help out vulnerable people in your community to pick up their groceries and medicine. Healthcare workers around the world
       are called to work in high demand and they might need your help looking after their children or looking after their parents while they attend to life-saving work in clinics and hospitals around the world. This example shows how young people in
       London, UK, are helping out the elderly.</p>
-    <h2>Donate</h2>
+    <h2 className="heading">Donate</h2>
     <p>Find a reliable charity to donate. The UN Foundation and the Swiss Philanthropy Foundation for an example, just launched a Coronavirus response fund. You can also support other campaigns such as “Stand together to beat Coronavirus” by Global
       Citizen urging that the G20 countries contribute financially to strengthen efforts by the World Health Organization.</p>
-    <h2>Hold your Government accountable</h2>
+    <h2 className="heading">Hold your Government accountable</h2>
     <p>Advocate for free testing, reliable information, paid sick leave, investments in science and Universal Health Coverage.</p>
 
   </div>
-  <hr className="partition" />
-  <div className="artcl">
+  
+  <div className="box">
     <div className="imgbox">
-      <h1 className="hdr">Coping with Anxiety & Depression</h1>
+      <h1 className="main-heading">Coping with Anxiety & Depression</h1>
       <img src={mentalHealth} alt="mentalhealth"/>
       <p style={{marginTop:"160px", fontSize: "110%"}}>In the midst of the global COVID-19 pandemic, it’s easy to feel overwhelmed by hopelessness and despair. But these tips can help improve your mood and ease depression.</p>
 
 
     </div>
-    <h2>
+    <h2 className="heading">
       Understanding Depression
     </h2>
     <p>If isolation, anxiety, economic uncertainty, and the daily onslaught of bad news generated by the coronavirus pandemic are taking a heavy toll on your mood, you’re not alone. In the U.S., nearly half the respondents to a recent Kaiser Family
@@ -300,18 +300,18 @@ const Bored = () => {
       thoughts, improve your mood, and cope with symptoms of depression.
 
     </p>
-    <h2>How COVID-19 affects depression</h2>
+    <h2 className="heading">How COVID-19 affects depression</h2>
     <p>This is a distressing, uncertain time. Even as some places start to open up again after months of lockdown, the end may still seem a long way off. You may have lost your job, be struggling financially, and worried about if and when the economy
       will pick up. You could be grieving the loss of loved ones or the life you knew before the pandemic, or feeling frustrated and cut off by continued social distancing. Living in the age of coronavirus can have a profound effect on your mood.</p>
-    <h3>Isolation and loneliness fuels depression</h3>
+    <h3 className="sub-heading">Isolation and loneliness fuels depression</h3>
     <p>Human beings are social creatures. Being cut off from the love, support, and close contact of family and friends can trigger depression or make existing symptoms worse. Months of social distancing and sheltering at home can leave you feeling
       isolated and lonely, having to face your problems alone.</p>
-    <h3>A troubled relationship may be even worse than loneliness</h3>
+    <h3 className="sub-heading">A troubled relationship may be even worse than loneliness</h3>
     <p>While strong and supportive relationships are crucial for your mental wellbeing, being forced to spend months quarantined in a troubled, unhappy, or abusive relationship can be even more damaging to your mood than being alone.</p>
-    <h3>Anxiety can lead to depression</h3>
+    <h3 className="sub-heading">Anxiety can lead to depression</h3>
     <p>All the fear and uncertainty surrounding COVID-19 means it’s natural to worry. When your worries spiral out of control, though, they can cause panic and anxiety. Since anxiety and depression are believed to stem from the same biological
       vulnerability, one can often lead to the other.</p>
-    <h3>Stress levels are soaring</h3>
+    <h3 className="sub-heading">Stress levels are soaring</h3>
     <div className="sidebar-box">
       <p>Experiencing a major change in your life, such the death of a loved one, the loss of a job, being diagnosed with a serious illness, or financial or relationship difficulties, can bring overwhelming levels of stress. As a result of this
         pandemic, you may be experiencing several of these major stressors at once, making you more vulnerable to depression.Experiencing a major change in your life, such the death of a loved one, the loss of a job, being diagnosed with a serious
@@ -325,9 +325,9 @@ const Bored = () => {
       </p>
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
-    <h1 className="hdr">Still need a counsellor?</h1>
+  
+  <div className="box">
+    <h1 className="main-heading">Still need a counsellor?</h1>
     <div className="imgbox">
       <img src={couns} alt="counsellor" style={{float: "right"}}/>
       <p>Chat Online anonymously with career, relationship, parenting counselors, psychologists for advice on self improvement & relieving stress, anxiety & depression.</p>
@@ -340,9 +340,9 @@ const Bored = () => {
 
     </div>
   </div>
-  <hr className="partition" />
-  <div className="artcl">
-    <h1 className="hdr">A Hope in this Pandemic!</h1>
+  
+  <div className="box">
+    <h1 className="main-heading">A Hope in this Pandemic!</h1>
     <img src={hope1} alt="hope"/>
     <p>The novel coronavirus pandemic can be the moment the world pushes back against fear and isolationism, and turns instead towards hope, solidarity and a shared sense of global community.
       These are fearful times, to be sure. Some 3.55 million people have been infected by COVID-19 and nearly a quarter of a million have perished. Billions of people are on lockdown or in self isolation.
@@ -350,7 +350,7 @@ const Bored = () => {
       are failing our planet. This isn’t helped by a daily news cycle that reads like an ever-escalating drumbeat of anxiety. Climate change, war and conflict, isolationism and trade wars; our world, at times, feels dark and lonely, and this despite
       the many, many positive news stories that exist but that rarely get attention.</p>
     <div className="imgbox">
-      <h2>Global togetherness</h2>
+      <h2 className="heading">Global togetherness</h2>
       <p>No one doubts that COVID-19 is one of the most dire threats the world has ever faced. And yet, amidst the confusion and anxiety, there are ever stronger signs of hope and solidarity, a sense of, and desire for, togetherness.
         It is this spirit of global togetherness that gives us hope. In this time of crisis, we are all neighbours in the world, and success will only be achieved when all people, in all countries, are protected.
         Thankfully, this shared sense of responsibility has seen a world come together in ways that we have not seen for some time, and the examples are everywhere.
@@ -363,7 +363,7 @@ const Bored = () => {
       And, as pointed out by Jayathma Wickramanayake, the UN Youth Envoy, young people from Syria to Peru to South Sudan are helping to tackle misinformation, raise community awareness and support the elderly.
       Such examples are spreading like wildfire as people seek out a light at the end of the tunnel and work to show, to each other, that we all stand together. We see this in the towns and cities around the globe where citizens are painting hearts
       on windows, where crowds cheer for healthcare workers, and where everyday people perform songs on social media to help lift spirits.</p>
-      <h2>Leaning into hope</h2>
+      <h2 className="heading">Leaning into hope</h2>
       <p>Without ignoring the realities we face, it is clear that the world is reaching for a positive message. These words were echoed by UN Secretary-General António Guterres to world leaders, as he emphasized the need for solidarity and global
         cooperation.
 
