@@ -7,24 +7,57 @@ import logo from './img/logo1.jpg';
 
 const Header = () => {
     return (
-        <Navbar bg="white" expand="lg" sticky="top">
-            <Navbar.Brand><img src={logo} alt="site logo" className="logo" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="nav">
-                <Nav className="mr-auto nav-list">
-                    <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                    <NavDropdown title="Status" id="basic-nav-dropdown">
-                        <NavDropdown.Item><Link to="/status/world">World</Link></NavDropdown.Item>
-                        <NavDropdown.Item><Link to="/status/india">India</Link></NavDropdown.Item>
-                        <NavDropdown.Item><Link to="/status/india/UP">Uttar Pradesh</Link></NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link><Link to="/experiences">Community Forum</Link></Nav.Link>
-                    <Nav.Link><Link to="/hope">Information</Link></Nav.Link>
-                    <Nav.Link><Link to="/bored">Bored?</Link></Nav.Link>
-                    <Nav.Link><Link to="/contributer">About Us</Link></Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Link to="/" className="nav-link">
+        <Navbar.Brand>Corona Info</Navbar.Brand>
+      </Link>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav>
+          <Nav.Link href={`/discussion-forum`}>Community Forum</Nav.Link>
+          <Nav.Link href={`/registration-guide`}>Information</Nav.Link>
+          <Nav.Link href={`/academics`}>Bored?</Nav.Link>
+        </Nav>
+        <Nav className="mr-auto">
+          <NavDropdown
+            title="Status"
+            id="collasible-nav-dropdown"
+            className="nav-link"
+          >
+            <NavDropdown.Item as={Link} to="/gallery">
+              World
+            </NavDropdown.Item>
+
+            <NavDropdown.Item as={Link} to="/placement-stats">
+              India
+            </NavDropdown.Item>
+
+            <NavDropdown.Divider />
+
+            <NavDropdown.Item as={Link} to="/miscellanous-guide">
+              Uttar Pradesh
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+        <Nav>
+          <NavDropdown
+            title="Get in Touch"
+            id="collasible-nav-dropdown"
+            className="nav-link"
+          >
+            <NavDropdown.Item as={Link} to="/about-us">
+              About Us
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/feedback">
+              Feedback
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/tnc">
+              Terms and Conditions
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
     )
 }
 
