@@ -12,10 +12,6 @@ div {
   overflow: auto;
 }
 
-body {
-  background-color: #e7e7de;
-}
-
 a:visited {
   color: white;
 }

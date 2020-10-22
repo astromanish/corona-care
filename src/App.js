@@ -1,27 +1,32 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+
 import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from './components/header';
+import Footer from './components/footer';
+
 import Home from './components/homepage'
+
 import WorldStat from './components/worldStat'
 import IndiaStat from './components/indiaStat';
 import DistrictData from './components/districtData';
+
 import Hope from './components/hope';
-import Experiences from './components/discussion-forum';
+
+import CommunityForum from './components/discussion-forum';
 import AnswerAll from "./components/DiscussionForum/answer-all";
+import { QuestionProvider } from "./components/DiscussionForum/QuestionContext";
+import { AnswerProvider } from "./components/DiscussionForum/AnswerContext";
+
 
 import Bored from './components/bored';
 import Contributer from './components/contributer';
-import Footer from './components/footer';
-
-import { QuestionProvider } from "./components/DiscussionForum/QuestionContext";
-import { AnswerProvider } from "./components/DiscussionForum/AnswerContext";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
         <Header />
         <hr />
         <div className="container">
@@ -37,7 +42,7 @@ const App = () => {
               <Route
                 exact
                 path="/experiences"
-                component={Experiences}
+                component={CommunityForum}
               />
               <Route
                 exact
@@ -49,7 +54,6 @@ const App = () => {
         </div>
         <hr />
         <Footer />
-      </div>
     </BrowserRouter>
   );
 }
