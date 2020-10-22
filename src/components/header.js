@@ -14,9 +14,9 @@ const Header = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
-          <Nav.Link href={`/discussion-forum`}>Community Forum</Nav.Link>
-          <Nav.Link href={`/registration-guide`}>Information</Nav.Link>
-          <Nav.Link href={`/academics`}>Bored?</Nav.Link>
+          <Nav.Link href={`/community-forum`}>Community Forum</Nav.Link>
+          <Nav.Link href={`/hope`}>Information</Nav.Link>
+          <Nav.Link href={`/bored`}>Bored?</Nav.Link>
         </Nav>
         <Nav className="mr-auto">
           <NavDropdown
@@ -24,17 +24,17 @@ const Header = () => {
             id="collasible-nav-dropdown"
             className="nav-link"
           >
-            <NavDropdown.Item as={Link} to="/gallery">
+            <NavDropdown.Item as={Link} to="/status/world">
               World
             </NavDropdown.Item>
 
-            <NavDropdown.Item as={Link} to="/placement-stats">
+            <NavDropdown.Item as={Link} to="/status/india">
               India
             </NavDropdown.Item>
 
             <NavDropdown.Divider />
 
-            <NavDropdown.Item as={Link} to="/miscellanous-guide">
+            <NavDropdown.Item as={Link} to="/status/india/:dist_id">
               Uttar Pradesh
             </NavDropdown.Item>
           </NavDropdown>

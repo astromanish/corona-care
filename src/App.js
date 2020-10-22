@@ -41,7 +41,7 @@ const App = () => {
             <AnswerProvider>
               <Route
                 exact
-                path="/experiences"
+                path="/community-forum"
                 component={CommunityForum}
               />
               <Route
