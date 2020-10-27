@@ -28,8 +28,8 @@ const App = () => {
   return (
     <BrowserRouter>
         <Header />
-        <div className="container">
           <Route exact path="/" component={Home} />
+        <div className="container">
           <Route exact path="/status/world" component={WorldStat} />
           <Route exact path="/status/india" component={IndiaStat} />
           <Route exact path="/status/india/:dist_id" component={DistrictData} />

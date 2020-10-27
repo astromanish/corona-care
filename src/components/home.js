@@ -21,84 +21,52 @@ const Home = () => {
         </div>
         <div className="light-container">
             <h1 className="heading">
-              Facha Help
+              Corona Info
             </h1>
             <p className="item-content">
-              This website aims to help and guide new comers. On this website you will find guide for registration, forum for discussion with peers and seniors, college academics,
-               festivals organized every year, gymkhana system of college which contains various clubs, gallery of photos, placement stats, exploration guide for BHU or 
-               Varanasi in general and some miscellanous guide.
-            </p>
-            <h1 className="heading">
-              About the Institute
-            </h1>
-            <p className="item-content">
-              The Indian Insitute of Technology(Banaras Hindu University), Varanasi owes its existence to the farsighted 
-              vision and relentless efforts of the founder Mahamana Pandit Madan Mohan Malsviya Ji. Three engineering and technological
-              institutions were established viz. the Benaras Enginnering College (BENCO) in 1919, the College of Minning and Metllurgy
-               (MINMET) in 1923 and the College of Technology (TECHNO) in 1932, as the constituent units of Banaras Hindu University.
-               In 1968 three engineering colleges merged to form the Institute of Technology (IT) BHU. In 2012 IT (BHU) had been 
-               converted to IIT (BHU).
-            </p>
-            <h1 className="heading">
-              History of Institute
-            </h1>
-            <p className="item-content">
-              The Indian Insitute of Technology(Banaras Hindu University), Varanasi owes its existence to the farsighted 
-              vision and relentless efforts of the founder Mahamana Pandit Madan Mohan Malsviya Ji. Three engineering and technological
-              institutions were established viz. the Benaras Enginnering College (BENCO) in 1919, the College of Minning and Metllurgy
-               (MINMET) in 1923 and the College of Technology (TECHNO) in 1932, as the constituent units of Banaras Hindu University.
-               In 1968 three engineering colleges merged to form the Institute of Technology (IT) BHU. In 2012 IT (BHU) had been 
-               converted to IIT (BHU).
+              Today we are in a very desperate and vulnerable situation as the deadly pandemic Covid-19 hit the 
+              world and turned our lives upside down. To deal with such a dismal situation, we need to have a 
+              proper knowledge about the current scenario and take every step carefully. We need to take care of
+               ourselves and our loved ones and at the same time ensure that everybody in the society is also 
+               well as this is a highly contagious disease. Apart from fighting the current situation of the 
+               pandemic and subsequent lockdown we need to simultaneously move on with our lives and not succumb
+                to the mental torment that comes with such a dark phase in our lives. This is what we plan to do
+                with this website. We aim to create a platform where everyone can be up to date with the current
+                  situation and take necessary precautions in order to safeguard oneself from the pandemic.
             </p>
         </div>
         <div className="dark-container">
           <div className="site_item">
             <div className="site_item-body">
-              <h1 className="heading">Registration Guide</h1>
-              <p className="site_item-content">A forum where one can discuss anything related to college with peers
-              and seniors. Forum aims to bring college junta together.</p>
+              <h1 className="heading">Community Forum</h1>
+              <p className="site_item-content">Here you can post your queries and experiences that you think is helpful for others or just to have a friendly discussion and make new friends!</p>
             </div>
             <img className="site_item-image" src={registration}/>
           </div>
-          <div className="site_item item-inverse">
-            <div className="site_item-body">
-              <h1 className="heading">Discussion Forum</h1>
-              <p className="site_item-content">A forum where one can discuss anything related to college with peers
-              and seniors. Forum aims to bring college junta together. </p>
-            </div>
-            <img className="site_item-image" src={discussion}/>
-          </div>
           <div className="site_item">
             <div className="site_item-body">
-              <h1 className="heading">Academics</h1>
-              <p className="site_item-content">A great insight into the academics system of the college. Things like Semester System,
-              Branch Change Policy, Grading Sytem etc are included in this part of the website.</p>
+              <h1 className="heading">Information</h1>
+              <p className="site_item-content">This tab contains all the important updates and information about the corona virus and the situation in hospitals. Everything about the prevention, symptoms and home remedies are mentioned to help you out.</p>
             </div>
             <img className="site_item-image" src={academics}/>
           </div>
           <div className="site_item item-inverse">
             <div className="site_item-body">
-              <h1 className="heading">Festivals</h1>
-              <p className="site_item-content">the Benaras Enginnering College (BENCO) in 1919, the College of Minning and Metllurgy
-               (MINMET) in 1923 and the College of Technology (TECHNO) in 1932, as the constituent units of Banaras Hindu University.
-               In 1968 three engineering colleges merged to form the Institute of Technology (IT) BHU. In 2012 IT (BHU) had been 
-               converted to IIT (BHU).</p>
+              <h1 className="heading">Bored</h1>
+              <p className="site_item-content">This tab contains information about how ro utilise the large amount of time we have because of lockdown. It also contains information about the mental health conditions and how to stay fit mentally and how to take proper care of yourself during the pandemic. The role of people as a community and individual is also mentioned.</p>
             </div>
             <img className="site_item-image" src={fest}/>
           </div>
           <div className="site_item">
             <div className="site_item-body">
-              <h1 className="heading">Student Gymkhana</h1>
-              <p className="site_item-content" >the Benaras Enginnering College (BENCO) in 1919, the College of Minning and Metllurgy
-               (MINMET) in 1923 and the College of Technology (TECHNO) in 1932, as the constituent units of Banaras Hindu University.
-               In 1968 three engineering colleges merged to form the Institute of Technology (IT) BHU. In 2012 IT (BHU) had been 
-               converted to IIT (BHU).</p>
+              <h1 className="heading">Status</h1>
+              <p className="site_item-content" >All the statistics about the infection, deaths, cure can be found here. It covers international, national and state wise statistics so that you can know which are the major hotspots in your city, state and country. All the information here is real time data and keeps updated regularly.</p>
             </div>
             <img className="site_item-image" src={gymkhana}/>
           </div>
           <div className="site_item item-inverse">
             <div className="site_item-body">
-              <h1 className="heading">Explore Varanasi</h1>
+              <h1 className="heading">About Us</h1>
               <p className="site_item-content">Perfect guidance for exploring the BHU or Varanasi in general. Every year
               students from different parts of india take admission in the college and don't know what city </p>
             </div>
