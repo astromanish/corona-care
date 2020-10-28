@@ -28,7 +28,7 @@ const App = () => {
   return (
     <BrowserRouter>
         <Header />
-          <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} />
         <div className="container">
           <Route exact path="/status/world" component={WorldStat} />
           <Route exact path="/status/india" component={IndiaStat} />
