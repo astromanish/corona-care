@@ -27,11 +27,7 @@ const QuestionList = () => {
           .map((ques) => {
             return (
               <>
-                <>
-                  <div className="d-item">
                     <Question ques={ques} />
-                  </div>
-                </>
               </>
             );
           })

@@ -51,7 +51,7 @@ const Answer = (props) => {
 
   return (
     <>
-      <div className="d-answers-each">
+      <div className="d-item d-answers-each">
         <div className="d-user-details">
           <div className="d-user-details-2">
             <div className="d-user-details-icon">

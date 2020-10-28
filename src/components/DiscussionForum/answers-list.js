@@ -28,11 +28,10 @@ const AnswerList = (props) => {
 
   return (
     <>
-      <div className="d-item">
         <Question ques={question} />
         <AddAnswer question={question} />
         {answersList.length ? (
-          <div className="d-answers-section">
+          <>
             {
               answersList
                 .slice(0)
@@ -45,14 +44,12 @@ const AnswerList = (props) => {
                   );
                 })
             }
-          </div>
+            </>
         ) : (
-            <div className="no-answer">
+            <div className="d-item no-answer">
               <p>Be first one to reply</p>
             </div>
           )}
-
-      </div>
     </>
   );
 };

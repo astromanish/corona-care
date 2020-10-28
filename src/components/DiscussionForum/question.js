@@ -44,7 +44,7 @@ const Question = (props) => {
   };
   console.log(props.ques, "hey");
   return (
-    <div className="d-ques-item" key={props.ques._id}>
+    <div className="d-item d-ques-item" key={props.ques._id}>
       <div className="d-ques">
         <div className="d-user-details">
           <div className="d-user-details-2">

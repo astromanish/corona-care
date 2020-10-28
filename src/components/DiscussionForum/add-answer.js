@@ -40,7 +40,7 @@ const AddAnswer = (props) => {
 
   return (
     <>
-      <div className="d-item-ask-model">
+      <div className=" d-item d-item-ask-model">
         <Form onSubmit={submitFun}>
           <Form.Group>
             <Form.Control ref={ansRef}

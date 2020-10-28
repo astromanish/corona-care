@@ -5,9 +5,7 @@ import AnswerList from "./answers-list";
 const AnswerAll = (props) => {
   return (
     <>
-      <>
         <AnswerList question={props.location.state} />
-      </>
     </>
   );
 };
