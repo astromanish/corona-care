@@ -1,94 +1,90 @@
-.manish{
-    grid-area: manish;
-    justify-self: right;
+.manish {
+  grid-area: manish;
+  justify-self: right;
 }
 
-.divyansh{
-    grid-area: divyansh;
-    justify-self: left;
+.divyansh {
+  grid-area: divyansh;
+  justify-self: left;
 }
 
-.vikas{
-    grid-area: vikas;
-    justify-self: right;
+.vikas {
+  grid-area: vikas;
+  justify-self: right;
 }
 
-.amogh{
-    grid-area: amogh;
-    justify-self: left;
+.amogh {
+  grid-area: amogh;
+  justify-self: left;
 }
 
-.contributer-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap:30px ;
-    row-gap: 30px;
-    grid-template-areas: "manish divyansh"
+.contributer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-areas:
+    "manish divyansh"
     "vikas amogh";
+  margin: 20px auto;
 }
 
-
-
-.contri-item{
-    box-shadow: 10px 10px 1px gray;
-    border-radius: 5%;
-    width: 330px;
-    height: 200px;
-    border: 2px solid gray;
-    position: relative;
+.contri-item {
+  box-shadow: 10px 10px 1px gray;
+  border-radius: 5%;
+  width: 330px;
+  height: 200px;
+  border: 2px solid gray;
+  position: relative;
 }
 
-.contri-item img{
-    width: 100px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    border-radius: 55%;
+.contri-item img {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border-radius: 55%;
 }
 
-.contri-item-nametag{
-    position: absolute;
-    right: 30px;
-    top: 30px;
+.contri-item-nametag {
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 
-.contri-item-name{
-    color: black;
+.contri-item-name {
+  color: black;
 }
 
-.contri-item-connect{
-    position: absolute;
-    left: 100px;
-    bottom: 20px;
+.contri-item-connect {
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
 }
 
-.contri-item-connect a{
-    font-size: 25px;
-    padding-left: 0.3em;
-    color: gray;
+.contri-item-connect a {
+  font-size: 25px;
+  padding-left: 0.3em;
+  color: gray;
 }
 
-.contri-item-connect a:hover{
-    color: red;
+.contri-item-connect a:hover {
+  color: red;
 }
 
+@media (max-width: 500px) {
+  .contributer-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "manish"
+      "divyansh"
+      "vikas"
+      "amogh";
+  }
 
-@media (max-width : 500px) {
-
-    .contributer-list{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "manish"
-        "divyansh"
-        "vikas"
-        "amogh";
-    }
-
-    .contri-item{
-        justify-self: center;
-    }
-
+  .contri-item {
+    justify-self: center;
+  }
 }
-
-

@@ -35,7 +35,7 @@ const App = () => {
           <Route exact path="/status/india/:dist_id" component={DistrictData} />
           <Route exact path="/hope" component={Hope} />
           <Route exact path="/bored" component={Bored} />
-          <Route exact path="/contributer" component={Contributer} />
+          <Route exact path="/about-us" component={Contributer} />
           <QuestionProvider>
             <AnswerProvider>
               <Route
