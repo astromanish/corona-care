@@ -12,17 +12,17 @@ body {
   font-size: 1rem;
 }
 
-img {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 15px;
-}
-
 iframe {
   width: 100%;
   max-width: 400px;
   height: 250px;
+  border-radius: 15px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
   border-radius: 15px;
 }
 
@@ -117,10 +117,3 @@ iframe {
     flex-direction: column;
   }
 }
-
-/* p {
-  overflow: auto;
-  word-wrap: break-word;
-} */
-
-/* ?????????????? */
