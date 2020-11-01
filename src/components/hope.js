@@ -324,10 +324,7 @@ const Hope = () => {
   </div>
   
   <div className="box">
-    <div className="imgbox">
-      <img src={myth2} alt="mythbuster" style={{width:"40%"}}/>
       <h1 className="main-heading">MythBusters</h1>
-    </div>
     <h2 className="heading">FACT: Vitamin and mineral supplements cannot cure COVID-19 </h2>
     <p>Micronutrients, such as vitamins D and C and zinc, are critical for a well-functioning immune system and play a vital role in promoting health and nutritional well-being. There is currently no guidance on the use of micronutrient supplements
       as a treatment of COVID-19.
@@ -378,8 +375,9 @@ const Hope = () => {
   </div>
   
   <div className="box">
+    <h1 className="main-heading">Asymptomatic Covid patients</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Asymptomatic Covid patients</h1>
+      
       <img src={asymp} alt="asymptomatic"/>
       <p>Blood tests that check for exposure to the coronavirus are starting to come online, and preliminary findings suggest that many people have been infected without knowing it. Even people who do eventually experience the common symptoms of
         COVID-19 don’t start coughing and spiking fevers the moment they’re infected.
@@ -419,9 +417,10 @@ const Hope = () => {
   </div>
   
   <div className="box">
-    <div className="imgbox">
       <h1 className="main-heading">Home Treatment</h1>
-      <img src={homet} alt="hometreatment" style={{float: "right"}}/>
+    <div className="imgbox">
+    
+      <img src={homet} alt="hometreatment"/>
       <p>Many Americans have stocked up on food and other supplies in preparation for social distancing.
 
         But while you may have enough toilet paper to last through the summer, have you thought about what you’ll need to have on hand if you actually contract COVID-19 and need to self-quarantine?
@@ -481,55 +480,56 @@ const Hope = () => {
   
   <div className="box">
     <h1 className="main-heading">Technology to the rescue.</h1>
-    <div >
+    <div className="imgbox">
       <img src={setu} alt="Aarogya Setu"/>
-      <h2 style={{textAlign:"center"}}>Aarogya Setu</h2>
       <p>
         Aarogya Setu is an Indian open-source COVID–19 "contact tracing, syndromic mapping and self-assessment" digital service, primarily a mobile app, developed by the National Informatics Centre.
       </p>
-      <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
+      <div className="store-box">
+        <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
         <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
+      </div>
     </div>
-    
-    <div >
+    <div className="imgbox">
       <img src={oldoc} alt="tracking apps" style={{float:"right", height: "80%"}}/>
-      <h2 style={{textAlign:"center"}}>Online Doctor</h2>
+      
       <p>DocOnline Health provides innovative platform where users can talk to a doctor online via audio/video/chat at anytime & from anywhere!</p>
-      <a href="https://play.google.com/store/apps/details?id=com.doconline.doconline&hl=en">
+     <div className="store-box">
+        <a href="https://play.google.com/store/apps/details?id=com.doconline.doconline&hl=en">
         <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://itunes.apple.com/us/app/doconline/id1234520016?ls=1&mt=8">
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
+     </div>
     </div>
-    
-    <div >
+    <div className="imgbox">
       <img src={pharm} alt="PharmeasyLogo"/>
-      <h2 style={{textAlign:"center"}}>Online medication</h2>
       <p>
         PharmEasy is India's most trusted online medical supply store & top pharmacy website supplying genuine medicines
       </p>
-      <a href="https://app.appsflyer.com/com.phonegap.rxpal?c=Footer?pid=Web">
-        <img src={GooglePlay} alt="playstore" className="storeicon"/>
+      <div className="store-box">
+        <a href="https://app.appsflyer.com/com.phonegap.rxpal?c=Footer?pid=Web">
+        <img src={GooglePlay} alt="playstore"className="storeicon"/>
       </a>
       <a href="https://app.appsflyer.com/id982432643?c=Footer?pid=Web">
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
+      </div>
     </div>
-    
+    </div>
+    <div className="box">
     <h1 className="main-heading">Covid Tracking Apps</h1>
-    <div >
+    <div className="imgbox">
       <img src={tracking} alt="Covid tracking" style={{float: "right"}}/>
-      <p>Smartphone apps are playing a big role in the response to the Covid-19 pandemic. These apps are being used to track infected people, issue self-quarantine guidelines, provide latest communication to the citizens and ease the burden on
-        healthcare staff. Throughout the world, from South Korea to Poland, the apps have been downloaded by millions of people. European Union is planning to roll out its own app, and has issued guidelines for the same. Apple and Google, the two
-        Silicon Valley tech giants, have joined hands for the development of an app that will assist healthcare organizations.</p>
-    </div>
-    <p>Technology has come to the rescue in diagnosing those affected, identifying hotspots and getting real-time updates. While there is an issue of data privacy at stake, most of the app developers are now trying to put mechanisms in place to
+        <p>Technology has come to the rescue in diagnosing those affected, identifying hotspots and getting real-time updates. While there is an issue of data privacy at stake, most of the app developers are now trying to put mechanisms in place to
       safeguard user privacy. Have a look at some of the most popular smartphone apps to track Covid-19 outbreak.</p>
+    </div>
+  
     <h2 className="heading">TraceTogether</h2>
     <p>TraceTogether is a popular smartphone app that can be downloaded by anyone with a Sinagpore mobile number and a Bluetooth-enabled smartphone. It is a contact tracing app that uses Bluetooth to track infected people and notify those who were in
       close proximity to them during the past 15 days. The app doesn’t collect data about GPS location or WiFI/mobile network. When two people using the app are close to each other, both phones will use Bluetooth to exchange a Temporary ID. This
