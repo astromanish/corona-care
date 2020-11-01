@@ -34,7 +34,7 @@ const Header = () => {
 
             <NavDropdown.Divider />
 
-            <NavDropdown.Item as={Link} to="/status/india/:dist_id">
+            <NavDropdown.Item as={Link} to="/status/india/UP">
               Uttar Pradesh
             </NavDropdown.Item>
           </NavDropdown>
