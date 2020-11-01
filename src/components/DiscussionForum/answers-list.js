@@ -42,9 +42,7 @@ const AnswerList = (props) => {
     <>
         <Question ques={question} />
         <AddAnswer question={question} />
-        {answersList.length ? (
-          <>
-            {
+        {loading ?(<PuffLoader color="#4A90E2" css={overHead} loading={loading} />): (
               answersList
                 .slice(0)
                 .reverse()
@@ -55,13 +53,8 @@ const AnswerList = (props) => {
                     </>
                   );
                 })
-            }
-            </>
-        ) : (
-            <div className="d-item no-answer">
-              <p>Be first one to reply</p>
-            </div>
-          )}
+        )
+        }
     </>
   );
 };
