@@ -44,7 +44,7 @@ const Home = () => {
           </div>
           <div className="site_item item-inverse">
             <div className="site_item-body">
-              <h1 className="heading">Fight Corona Essentials</h1>
+              <h1 className="heading">Corona Essentials</h1>
               <p className="site_item-content">This tab contains all the important updates and information about the corona virus and the situation in hospitals. Everything about the prevention, symptoms and home remedies are mentioned to help you out.</p>
             </div>
             <img className="site_item-image" src={vaccine}/>
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="site_item">
             <div className="site_item-body">
               <h1 className="heading">Avoid getting bored in lockdown</h1>
-              <p className="site_item-content">This tab contains information about how ro utilise the large amount of time we have because of lockdown. It also contains information about the mental health conditions and how to stay fit mentally and how to take proper care of yourself during the pandemic. The role of people as a community and individual is also mentioned.</p>
+              <p className="site_item-content">This tab contains information about how to utilise the large amount of time we have because of lockdown. It also contains information about the mental health conditions and how to stay fit mentally and how to take proper care of yourself during the pandemic. The role of people as a community and individual is also mentioned.</p>
             </div>
             <img className="site_item-image" src={learning}/>
           </div>
