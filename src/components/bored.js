@@ -16,9 +16,10 @@ const Bored = () => {
     return (
         <>
             <div className="box">
+              <h1 className="main-heading">Best Online Games To Play In Quarantine</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Best Online Games To Play In Quarantine</h1>
-      <img src={kidsPlaying} alt="kidsplaying" className="imgleft"/>
+      
+      <img src={kidsPlaying} alt="kidsplaying"/>
       <p>
         Not meeting your friends and missing fun days hanging out with them, is one of the biggest boring disadvantages of quarantine forced upon us by this COVID-19 pandemic. Thanks to our cell phones and the internet, we have plenty of ways to pass
         time. We have Social Media, Video Calling, Group Video calling, which brings our besties together. We understand that there are still many days to pass with social distancing to follow.
@@ -86,10 +87,11 @@ const Bored = () => {
   
 
   <div className="box">
+    <h1 className="main-heading">Skills To Learn</h1>
     <div className="imgbox">
 
-      <h1 className="main-heading">Skills To Learn</h1>
-      <img src={skills} alt="skills" className="imgleft" style={{float: "right"}}/>
+      
+      <img src={skills} alt="skills"/>
 
       <p>
         If you’re stuck at home as a result of the coronavirus outbreak, then chances are you’re probably on the lookout for something to do.While jigsaw puzzles and video games can be a fun way to get through a few hours of the day, there are
@@ -174,12 +176,12 @@ const Bored = () => {
   </div>
   
   <div className="box">
-
+         <h1 className="main-heading">Indoor Games to play during Lockdown</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Indoor Games to play during Lockdown</h1>
+   
 
 
-      <img src={games} alt="games" className="imgright"/>
+      <img src={games} alt="games"/>
 
       <p>
         The 21 day lockdown has got all of us getting used to and adopting new schedules as far as our daily routines are concerned. Sleep patterns have changed, meals in some cases have become more frequent while in the case of others have reduced.
@@ -228,10 +230,11 @@ const Bored = () => {
   
 
   <div className="box">
+    <h1 className="main-heading">Self Care</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Self Care</h1>
-      <img src={selfCare} alt="selfcare" style={{width : "25%", marginRight: "20px" ,float: "right"}}/>
-      <p style={{paddingTop:"40px"}}>
+      
+      <img src={selfCare} alt="selfcare"/>
+      <p>
         If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
         Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times.
         Keep to regular routines and schedules as much as possible.
@@ -242,21 +245,21 @@ const Bored = () => {
   
   <div className="box">
     <h1 className="main-heading">Covid Heroes</h1>
-    <img src={warriors} alt=""/>
+    <div className="imgbox">
+      <img src={warriors} alt=""/>
     <p>
       Given site https://covidwarriors.gov.in/ not working
     </p>
-    <div className="imgbox">
-
     </div>
 
   </div>
   
   <div className="box">
+    <h1 className="main-heading">Our Role as Individuals !</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Our Role as Individuals !</h1>
-      <img src={hero} alt="individual" style={{float: "right"}}/>
-      <p style={{paddingTop: "80px"}}>
+      
+      <img src={hero} alt="individual" />
+      <p>
         We are all impacted by COVID19 – A.K.A. the Coronavirus – one way or another. No matter where we are in the world and where in the age spectrum we sit. However, some of us are at higher risk – for instance, older people and people with severe
         underlying health conditions. Some of us are more impacted than others due to individual, community or geographical circumstances. Now before a deep dive into specifically what you all can do, start by applying practicality and common sense
         and follow these five simple pointers to manage the COVID19 and also come together as a resilient global community:
@@ -281,10 +284,11 @@ const Bored = () => {
   </div>
   
   <div className="box">
+    <h1 className="main-heading">Coping with Anxiety & Depression</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Coping with Anxiety & Depression</h1>
+      
       <img src={mentalHealth} alt="mentalhealth"/>
-      <p style={{marginTop:"160px", fontSize: "110%"}}>In the midst of the global COVID-19 pandemic, it’s easy to feel overwhelmed by hopelessness and despair. But these tips can help improve your mood and ease depression.</p>
+      <p>In the midst of the global COVID-19 pandemic, it’s easy to feel overwhelmed by hopelessness and despair. But these tips can help improve your mood and ease depression.</p>
 
 
     </div>
@@ -328,35 +332,37 @@ const Bored = () => {
   <div className="box">
     <h1 className="main-heading">Still need a counsellor?</h1>
     <div className="imgbox">
-      <img src={couns} alt="counsellor" style={{float: "right"}}/>
+      <img src={couns} alt="counsellor"/>
       <p>Chat Online anonymously with career, relationship, parenting counselors, psychologists for advice on self improvement & relieving stress, anxiety & depression.</p>
-      <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
+      <div className="store-box">
+        <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en">
         <img src={GooglePlay} alt="playstore" className="storeicon"/>
       </a>
       <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357">
         <img src={appstore} alt="appstore" className="storeicon"/>
       </a>
+      </div>
 
     </div>
   </div>
   
   <div className="box">
     <h1 className="main-heading">A Hope in this Pandemic!</h1>
-    <img src={hope1} alt="hope"/>
+    <div className="imgbox">
+      <img src={hope1} alt="hope"/>
     <p>The novel coronavirus pandemic can be the moment the world pushes back against fear and isolationism, and turns instead towards hope, solidarity and a shared sense of global community.
       These are fearful times, to be sure. Some 3.55 million people have been infected by COVID-19 and nearly a quarter of a million have perished. Billions of people are on lockdown or in self isolation.
       Yet this pandemic and the fear, dread, and anxiety that it has induced has not occurred in isolation. For years, we have existed under the constant and pervasive feeling that things are getting worse, that we are failing each other and that we
       are failing our planet. This isn’t helped by a daily news cycle that reads like an ever-escalating drumbeat of anxiety. Climate change, war and conflict, isolationism and trade wars; our world, at times, feels dark and lonely, and this despite
       the many, many positive news stories that exist but that rarely get attention.</p>
-    <div className="imgbox">
-      <h2 className="heading">Global togetherness</h2>
+    </div>
+    <h2 className="heading">Global togetherness</h2>
       <p>No one doubts that COVID-19 is one of the most dire threats the world has ever faced. And yet, amidst the confusion and anxiety, there are ever stronger signs of hope and solidarity, a sense of, and desire for, togetherness.
         It is this spirit of global togetherness that gives us hope. In this time of crisis, we are all neighbours in the world, and success will only be achieved when all people, in all countries, are protected.
         Thankfully, this shared sense of responsibility has seen a world come together in ways that we have not seen for some time, and the examples are everywhere.
         In the U.K., an army of volunteers has come forth to support their neighbors. As stated in the New York Times, “When the government appealed recently for 250,000 people to help the National Health Service, more than 750,000 signed up. It was
         forced to temporarily stop taking applicants so it could process the flood.”</p>
       <p>
-
       In Somalia, where health infrastructure and traditional media have suffered under decades of strife, local storytellers are being equipped with the skills and tools to reach remote communities and educate them on best practices against
       COVID-19. The initiative is a collaboration between UNDP Somalia’s Accelerator Lab and experts from Australia’s Queensland University and Digital Storytellers.
       And, as pointed out by Jayathma Wickramanayake, the UN Youth Envoy, young people from Syria to Peru to South Sudan are helping to tackle misinformation, raise community awareness and support the elderly.
@@ -379,8 +385,6 @@ const Bored = () => {
 
         Amidst the pain that we continue to endure, we should find comfort in the stories of hope and solidarity, and continue to see the value in the positive, encouraging lessons that are emerging for our post-COVID world.</p>
 
-
-    </div>
 
   </div>
 

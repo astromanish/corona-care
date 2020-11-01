@@ -112,10 +112,6 @@ iframe {
   align-items: center;
 }
 
-div {
-  overflow: hidden;
-}
-
 @media (max-width: 768px) {
   .imgbox {
     flex-direction: column;
