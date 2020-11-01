@@ -45,10 +45,6 @@
   margin-bottom: 40px;
 }
 
-.item-inverse {
-  flex-direction: row-reverse;
-}
-
 .site_item-content {
   padding: 0px 15px;
   text-align: center;
@@ -65,7 +61,7 @@
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .site_item {
     flex-direction: column;
   }

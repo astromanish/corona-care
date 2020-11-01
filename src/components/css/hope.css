@@ -1,30 +1,18 @@
-img {
-  float: left;
-  width: 50%;
-}
-
-iframe {
-  float: left;
-  width: 50%;
-  height: 300px;
-  border-radius: 15px;
-}
-
-.link {
-  text-decoration: underline;
-}
-
 .couns {
   width: 98%;
   padding: auto;
   border-radius: 30px;
 }
 
+.iframe-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+
 @media only screen and (max-width: 768px) {
-  img {
-    width: 95%;
-  }
-  iframe {
-    width: 95%;
+  .iframe-box {
+    flex-direction: column;
   }
 }

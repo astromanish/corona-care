@@ -28,37 +28,36 @@ const Hope = () => {
     return ( 
         <>
            <div className="box">
-    <div className="imgbox">
-      <iframe src="https://www.youtube.com/embed/2JsWf-2nN1Y" style={{float:"left"}}/>
-      <h1 className="main-heading2">Are you infected?</h1>
+    <div className="iframe-box">
+      <iframe src="https://www.youtube.com/embed/2JsWf-2nN1Y"/>
+      <h1 className="heading">Are you infected?</h1>
     </div>
     
-    <div className="imgbox">
-      <iframe src="https://www.youtube.com/embed/U8r3oTVMtQ0" style={{float:"right"}}/>
-      <h1 className="main-heading2">Covid-19 Symptoms Timetable</h1>
+    <div className="iframe-box item-inverse">
+      <iframe src="https://www.youtube.com/embed/U8r3oTVMtQ0"/>
+      <h1 className="heading">Covid-19 Symptoms Timetable</h1>
     </div>
     
-    <div className="imgbox">
+    <div className="iframe-box">
 
-      <iframe src="https://www.youtube.com/embed/xTvd7oAEyhs" style={{float:"left"}}/>
-      <h1 className="main-heading2">Home care tips</h1>
+      <iframe src="https://www.youtube.com/embed/xTvd7oAEyhs"/>
+      <h1 className="heading">Home care tips</h1>
     </div>
     
-    <div className="imgbox">
+    <div className="iframe-box item-inverse">
 
-      <iframe src="https://www.youtube.com/embed/S3d66JvDYvk" style={{float:"right"}}/>
-      <h1 className="main-heading2">Do you need to go to the Hospital?</h1>
+      <iframe src="https://www.youtube.com/embed/S3d66JvDYvk"/>
+      <h1 className="heading">Do you need to go to the Hospital?</h1>
     </div>
 
   </div>
   
   <div className="box">
+     <h1 className="main-heading">Vaccine Updates</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Vaccine Updates</h1>
       <img src={vaccine} alt="vaccine"/>
       <p>Coronavirus still poses a significant threat, but there are no vaccines proven to protect the body against the disease it causes - Covid-19.
         However there are around 40 different coronavirus vaccines in clinical trials - including one being developed by the University of Oxford that is already in an advanced stage of testing.</p>
-
     </div>
     <h2 className="heading">Why is a coronavirus vaccine important?</h2>
     <p>The virus spreads easily, and the majority of the world's population is still vulnerable to it. A vaccine would provide some protection by training people's immune systems to fight the virus so they should not become sick.
@@ -101,12 +100,11 @@ const Hope = () => {
   </div>
   
   <div className="box">
+          <h1 className="main-heading">India-Russia collaboration for Sputnik-V</h1>
     <div className="imgbox">
-      <h1 className="main-heading">India-Russia collaboration for Sputnik-V</h1>
-      <img src={indiaRus} alt="idia-russia flag" style={{float:"right"}}/>
-      <p style={{marginTop :"150px"}}>India and Russia are in talks for collaboration to manufacture Sputnik V – the anti-coronavirus vaccine launched by Moscow earlier this month – and for approval to conduct phase three trials, Union Health Secretary Rajesh Bhushan said on
+      <img src={indiaRus} alt="idia-russia flag"/>
+      <p >India and Russia are in talks for collaboration to manufacture Sputnik V – the anti-coronavirus vaccine launched by Moscow earlier this month – and for approval to conduct phase three trials, Union Health Secretary Rajesh Bhushan said on
         Tuesday. Bhushan is also the co-chair of the national Covid-19 vaccine administration task force.</p>
-
     </div>
     <p>“As far as Sputnik V vaccine is concerned, both India and Russia are in communication,” said Bhushan, according to ANI. “Some initial information has been shared while some detailed information is awaited.” Unidentified government officials
       said Russian Ambassador Nikolay Kudashev had contacted Principal Scientific Adviser K Vijay Raghavan for vaccine-making partnership. Meanwhile, the Indian embassy in Moscow is in talks with the Gamaleya National Centre of Epidemiology and
@@ -129,8 +127,9 @@ const Hope = () => {
   </div>
   
   <div className="box">
+     <h1 className="main-heading">Fear among Non-Covid patients</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Fear among Non-Covid patients</h1>
+     
       <img src={fear} alt="fear"/>
       <p>New Delhi: Due to the coronavirus pandemic, patients suffering from critical diseases like cancer and those requiring surgeries are delaying hospital visits and thereby endangering their health and even risking their lives, according to some
         doctors.
@@ -138,6 +137,8 @@ const Hope = () => {
         A number of medical practitioners said they have even lost patients who could have survived or their situation salvaged had they reported to hospitals in time.
 
       </p>
+    </div>
+    <div>
       <p>Dr Mandeep S. Malhotra, head of department (head, neck and breast oncoplasty) at Fortis Hospital Vasant Kunj, said two of his patients – an IAS officer and an IT consultant, both aged 45 – had palpable breast lumps in March. Due to fear of
         COVID-19, they neither reported to the hospital nor to their gynaecologists or family doctors and their cancer has now aggravated to Stage 4.</p>
       <p>He also shared another case of a 42-year-old patient who had a relapse of cancer around April while he was in his hometown of Dehradun.
@@ -171,8 +172,9 @@ const Hope = () => {
   </div>
   
   <div className="box">
+    <h1 className="main-heading">Hospital Capacity</h1>
     <div className="imgbox">
-      <h1 className="main-heading">Hospital Capacity</h1>
+      
       <img src={hospital} alt="hospital"/>
       <p>The coronavirus disease 2019 (COVID-19) news coming from Italy should be sobering to health system leaders throughout the world. We are witnessing an advanced health system stretched beyond its capacity. When the capacity of the system is
         exceeded, rationing decisions may need to be made that extend well beyond patients with COVID-19. On March 11, the Italian College of Anesthesia, Analgesia, Resuscitation, and Intensive Care was forced to publish guidelines for rationing
@@ -214,9 +216,9 @@ const Hope = () => {
   </div>
   
   <div className="box">
-    <div className="imgbox">
-      <h1 className="main-heading">Home Remedies</h1>
-      <img src={homeRemedies} alt="home_remedies" className="bigimg"/>
+     <h1 className="main-heading">Home Remedies</h1>
+    <div className="imgbox"> 
+      <img src={homeRemedies} alt="home_remedies"/>
       <p>The Union Health Ministry on Sunday issued several guidelines to manage COVID-19 and provide holistic care to those who are healing from the disease. Apart from general advises such as practising yoga, seeking counselling, having enough
         water and a healthy diet, the ministry also released a long list of home remedies for boosting immunity and making a quick recovery. Here is the complete list of home remedies released by the health ministry and how they can help in
         strengthening immunity and proper recovery post-COVID-19.</p>
@@ -224,75 +226,99 @@ const Hope = () => {
   </div>
   
   <div >
-    <img src={ayushKwath} alt="ayush_kwath" style={{float:"right"}}/>
-    <h2 style={{textAlign: "center"}}>Ayush Kwath</h2>
+    <h2 className="heading">Ayush Kwath</h2>
+   <div className="imgbox item-inverse">
+      <img src={ayushKwath} alt="ayush_kwath"/>
+    
     <p>The ministry suggested drinking 1 cup or 150 ml of Ayush Kwath every day. It is a combination of medicinal herbs like four parts Tulsi (holy basil), two parts Dalchini (cinnamon), two parts Sunthi (ginger root) and one part Krishna Marich
       (black pepper). The ministry has also previously released instructions on how to make this drink at home. Take all the dried ingredients and make a coarse powder. Divide it into tea bags of 3 grams each. It can be added to 150 ml of boiled
       water once or twice a day. You can also add raisins, lemon juice or jaggery to enhance the taste. This combination is said to not only boost immunity but also promote general well-being.</p>
+   </div>
 
   </div>
   
   <div >
-    <img src={giloy} alt="giloy"/>
-    <h2 style={{textAlign: "center"}}>Sanshamani Vati</h2>
+    <h2 className="heading">Sanshamani Vati</h2>
+    <div className="imgbox">
+      <img src={giloy} alt="giloy"/>
+    
     <p>
       The next prescription by the ministry is to have 1 gram of Sunshmani Vati every day. It is also known as Guduchi ghana vati and is made with the bark of Giloy tree. It is considered useful in treating all types of fevers. It has mild
       anti-inflammatory and anti-pyretic effects, providing benefits to those who are recovering from the after-effects of diseases like COVID-19. Giloy is also useful in expelling toxins arising from undigested food particles that can cause fever.
       It is also helpful in providing relief from headache, indigestion, drop in appetite, body pain and burning sensation. You can either add the extract in the tea or have 1 tablet of 500 mg daily.
     </p>
+    </div>
 
   </div>
   
   <div >
-    <img src={aswagandha} alt="ashwagandha" style={{float:"right"}}/>
-    <h2 style={{textAlign: "center"}}>Ashwagandha</h2>
+    <h2 className="heading">Ashwagandha</h2>
+    
+    <div className="imgbox item-inverse">
+      <img src={aswagandha} alt="ashwagandha"/>
     <p>The ministry has also advised taking 1-3 grams of ashwagandha powder twice daily for 15 days. Ashwagandha is an ancient medicinal herb that provides a range of health benefits to the body. Recovering from diseases like COVID-19 can be very
       stressful for the body and mind. Ashwagandha is effective in reducing stress and cortisol levels, promoting brain function, strengthening immunity and bringing down blood sugar levels. It also helps combat symptoms of anxiety and depression.
       You can also take ashwagandha supplements of 500 mg twice a day.</p>
+    </div>
 
   </div>
   
   <div >
-    <img src={amla} alt="amla"/>
-    <h2 style={{textAlign: "center"}}>Amla</h2>
+    <h2 className="heading">Amla</h2>
+    <div className="imgbox">
+      <img src={amla} alt="amla"/>
+    
     <p>Another home remedy recommended by the ministry is to have 1 amla fruit or 1-3 grams of amla powder daily. Amla has long been touted for its ability to treat cold, cough and flu. It makes the respiratory system more robust and delivers relief
       from chest congestion. Amla contains chromium that strengthens the heart, which is impacted by COVID-19. It is also loaded with antioxidants that fight free radicals and keep many diseases at bay. The anti-bacterial qualities of amla also
       detoxify your system.</p>
+    </div>
 
   </div>
   
   <div >
-    <img src={mulethi} alt="meluthi" style={{float:"right"}}/>
-    <h2 style={{textAlign: "center"}}>Mulethi powder</h2>
+    <h2 className="heading">Mulethi powder</h2>
+    <div className="imgbox item-inverse">
+      <img src={mulethi} alt="meluthi"/>
+    
     <p>Mulethi powder is another ancient medicinal herb prescribed by the health ministry to people who have a dry cough. The dosage recommended is 1-3 grams of mulethi powder twice every day with lukewarm water. Mulethi or liquorice is useful in
       providing quick relief from cough and cold. You can also make a cold and cough relief tea at home by boiling 1-inch mulethi root, 1 tsp grated ginger, 3-4 black peppercorns in 2 cups of water and reducing it to half. If you cannot bear the
       taste, you can add 1 tsp honey to your cup.</p>
+    </div>
   </div>
   
   <div >
-    <img src={turmericSalt} alt="turmeric_salt"/>
-    <h2 style={{textAlign: "center"}}>Gargling with turmeric & salt
+    <h2 className="heading">Gargling with turmeric & salt
     </h2>
+    <div className="imgbox">
+      <img src={turmericSalt} alt="turmeric_salt"/>
+    
     <p>Sore throat is another pesky aftereffect of COVID-19. For this, the health ministry advises gargling with warm water containing turmeric and salt. Salt in the solution neutralises the acids in the throat and flushes them away, thus providing
       relief from the burning sensation in the throat and fast healing of irritated mucus membranes. Turmeric plays a significant role in controlling infections, wounds and diseases in the throat. Mix half a teaspoon each of salt and turmeric in one
       cup of warm water and gargle.</p>
+    </div>
 
   </div>
   
   <div >
-    <img src={turmeric} alt="turmeric" style={{float:"right"}}/>
-    <h2 style={{textAlign: "center"}}>Warm Turmeric milk</h2>
+    <h2 className="heading">Warm Turmeric milk</h2>
+    <div className="imgbox item-inverse">
+      <img src={turmeric} alt="turmeric"/>
+    
     <p>The next suggestion by the ministry is to drink warm milk with ½ tsp Turmeric every morning and evening. Turmeric milk has therapeutic properties that help the body in recovering from a disease or injury quickly. Haldi doodh is useful in
       speeding up the healing process of the body and shielding it with several ailments and infections. Turmeric also has anti-microbial, anti-allergic and anti-inflammatory properties. You can also add a pinch of powdered black pepper to increase
       the potency of the drink.</p>
+    </div>
 
   </div>
   
   <div >
-    <img src={chyawanprash} alt="chyawanprash"/>
-    <h2 style={{textAlign: "center"}}>Chyawanprash</h2>
+    <h2 className="heading">Chyawanprash</h2>
+    <div className="imgbox">
+       <img src={chyawanprash} alt="chyawanprash"/>
+    
     <p>Taking 1 tsp or 5 mg of Chyawanprash daily in the morning is recommended by the health ministry. Chyawanprash contains more than 40 ancient medicinal herbs that can stimulate immunity and help in recovering quickly from diseases. It was
       earlier also suggested by the Ministry of AYUSH to have chyawanprash in the morning with milk or lukewarm water to boost immunity. People with diabetes were instructed to take sugar-free chyawanprash.</p>
+    </div>
 
   </div>
   </div>

@@ -12,6 +12,20 @@ body {
   font-size: 1rem;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  border-radius: 15px;
+}
+
 .container {
   width: 95%;
   max-width: 1400px;
@@ -87,8 +101,25 @@ body {
   width: 20%;
 }
 
+.item-inverse {
+  flex-direction: row-reverse;
+}
+
+.imgbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 div {
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .imgbox {
+    flex-direction: column;
+  }
 }
 
 /* p {
