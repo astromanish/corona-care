@@ -40,21 +40,7 @@ const Header = () => {
           </NavDropdown>
         </Nav>
         <Nav>
-          <NavDropdown
-            title="Get in Touch"
-            id="collasible-nav-dropdown"
-            className="nav-link"
-          >
-            <NavDropdown.Item as={Link} to="/about-us">
-              About Us
-            </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/feedback">
-              Feedback
-            </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/tnc">
-              Terms and Conditions
-            </NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Link href={`/about-us`}>About Us</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
