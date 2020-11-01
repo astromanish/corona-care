@@ -1,21 +1,37 @@
 import React, { Component } from "react";
+import PuffLoader from 'react-spinners/PuffLoader';
+import { css } from '@emotion/core';
 import axios from "axios";
 import NumberFormat from 'react-number-format';
 
 class CountryData extends Component {
     state = {
-        posts: []
+        posts: [],
+        loading: false
     }
     componentDidMount() {
+        this.setState({                   
+                    loading: true
+                });
         axios.get("https://api.covid19api.com/summary")
             .then(res => {
-                this.setState({
-                    posts: res.data.Countries
+                this.setState({                   
+                    posts: res.data.Countries,
+                    loading: false
                 });
             });
     }
     render() {
         const { posts } = this.state;
+           const overHead = css`
+                            height: 15vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        
+                            padding: 5vh ;
+            
+                            `;
         return (
             <div className="countryData">
                 <table id="middle-table">
@@ -27,7 +43,7 @@ class CountryData extends Component {
                             <th>Deaths</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    {this.state.loading? (<PuffLoader color="#4A90E2" css={overHead} loading={this.state.loading} />): (<tbody>
                         {posts.map(post => {
                             return (
                                 <tr key={post.CountryCode}>
@@ -60,7 +76,7 @@ class CountryData extends Component {
                             )
                         }
                         )}
-                    </tbody>
+                    </tbody>)}
                 </table>
             </div>
         )
