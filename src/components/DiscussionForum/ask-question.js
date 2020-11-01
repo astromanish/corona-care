@@ -42,7 +42,7 @@ const AskQuestion = () => {
           <Form.Group>
             <Form.Control ref={quesRef}
               value={question} as="textarea" rows="3"
-              placeholder="Enter your question/experience"
+              placeholder="Enter question/experience you want to ask/share"
               onChange={(e) => setQuestion(e.target.value)} />
           </Form.Group>
           <Form.Group>

@@ -15,8 +15,8 @@ const Header = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
           <Nav.Link href={`/community-forum`}>Community Forum</Nav.Link>
-          <Nav.Link href={`/hope`}>Information</Nav.Link>
-          <Nav.Link href={`/bored`}>Bored?</Nav.Link>
+          <Nav.Link href={`/hope`}>Corona Essentials</Nav.Link>
+          <Nav.Link href={`/bored`}>Avoid Boredom</Nav.Link>
         </Nav>
         <Nav className="mr-auto">
           <NavDropdown

@@ -79,20 +79,18 @@ const Hope = () => {
       But scientists are optimistic that, if trials are successful, then a small number of people - such as healthcare workers - may be vaccinated before the end of this year.
       It is worth noting that four coronaviruses already circulate in human beings. They cause common cold symptoms and we don't have vaccines for any of them.</p>
     <h2 className="heading">What still needs to be done?</h2>
-    <p>Multiple research groups have designed potential vaccines. However there is much more work to do.
-    </p>
+    
     <div className="sidebar-box">
-      <ul>
-        <li>Trials need to show the vaccine is safe. It would not be useful if it caused more problems than the disease</li>
-        <li>Clinical trials will also need to show vaccines provoke an immune response, which protect people from getting sick</li>
-        <li>A way of producing the vaccine on a huge scale must be developed for the billions of potential doses</li>
-        <li>Medicines regulators must approve it before it can be given</li>
-
-      </ul>
+      <p>Multiple research groups have designed potential vaccines. However there is much more work to do.
+        Trials need to show the vaccine is safe. It would not be useful if it caused more problems than the disease
+      Clinical trials will also need to show vaccines provoke an immune response, which protect people from getting sick
+      A way of producing the vaccine on a huge scale must be developed for the billions of potential doses
+      Medicines regulators must approve it before it can be given.
+    </p>
+      
       <p className="read-more">
         <a href="https://www.bbc.com/news/health-51665497" className="button">
           <button type="button" className="read-more-btn">Read More</button>
-
         </a>
       </p>
 
@@ -100,7 +98,7 @@ const Hope = () => {
   </div>
   
   <div className="box">
-          <h1 className="main-heading">India-Russia collaboration for Sputnik-V</h1>
+          <h1 className="main-heading">India-Russia collaboration for Sputnik-V Vaccine</h1>
     <div className="imgbox">
       <img src={indiaRus} alt="idia-russia flag"/>
       <p >India and Russia are in talks for collaboration to manufacture Sputnik V – the anti-coronavirus vaccine launched by Moscow earlier this month – and for approval to conduct phase three trials, Union Health Secretary Rajesh Bhushan said on
@@ -349,7 +347,7 @@ const Hope = () => {
       Some people who become ill with COVID-19 can also develop a bacterial infection as a complication. In this case, antibiotics may be recommended by a health care provider.
 
       There is currently no licensed medication to cure COVID-19. If you have symptoms, call your health care provider or COVID-19 hotline for assistance.</p>
-    <h2 className="heading">FACT: The prolonged use of medical masks* when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency
+    <h2 className="heading">FACT: The prolonged use of medical masks when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency
 
     </h2>
     <p>The prolonged use of medical masks can be uncomfortable. However, it does not lead to CO2 intoxication nor oxygen deficiency. While wearing a medical mask, make sure it fits properly and that it is tight enough to allow you to breathe

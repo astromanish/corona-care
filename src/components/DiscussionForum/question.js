@@ -102,7 +102,7 @@ const Question = (props) => {
                   pathname: `/discussion-forum/${props.ques._id}/answers`,
                   state: props.ques,
                 }}
-              >  14 Answers </Link></span>
+              >  Replies </Link></span>
             </div>
             {/* <div className="d-upvotes">
               <span>13 Upvotes </span>

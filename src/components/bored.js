@@ -1,6 +1,6 @@
 import React from 'react'
 
-import kidsPlaying from "./img/kidsplaying.png";
+import kidsPlaying from "./img/kidsplaying1.png";
 import skills from "./img/skills.jpg";
 import games from './img/games.jpg';
 import selfCare from './img/selfcare.png';
@@ -100,11 +100,6 @@ const Bored = () => {
         self-isolation worthwhile.
       </p>
     </div>
-
-
-    <h3 className="sub-heading">
-      Here are a few ideas to help you get started.
-    </h3>
     <h2 className="heading">
       New Language.
     </h2>
@@ -248,7 +243,7 @@ const Bored = () => {
     <div className="imgbox">
       <img src={warriors} alt=""/>
     <p>
-      Given site https://covidwarriors.gov.in/ not working
+      Right now, our healthcare workers are on the frontlines of battling the novel coronavirus disease (COVID-19) that’s spreading rapidly throughout our city, state and nation. They are putting themselves in the path of this virus — in Chicago and around the world — in this unprecedented crisis. Our doctors, nurses, technicians, transporters, EMTs, pharmacists and everyone who supports patient care are rising to the occasion and caring for our most vulnerable populations. 
     </p>
     </div>
 
