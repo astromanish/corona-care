@@ -26,8 +26,13 @@ img {
   border-radius: 15px;
 }
 
+p {
+  text-align: center;
+  padding: 5px 15px;
+}
+
 .container {
-  width: 95%;
+  width: 97%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -45,6 +50,7 @@ img {
   font-size: 2.5rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .heading {
@@ -52,7 +58,7 @@ img {
   font-size: 1.8rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  margin: 15px auto;
 }
 
 .sub-heading {
@@ -60,6 +66,7 @@ img {
   font-size: 1.2rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
+  text-decoration: underline;
 }
 
 .sidebar-box {
