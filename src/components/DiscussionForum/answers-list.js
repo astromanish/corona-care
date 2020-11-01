@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import PuffLoader from 'react-spinners/PuffLoader';
+import { css } from '@emotion/core';
 import axios from "axios";
 import Answer from "./answer";
 
@@ -7,11 +9,20 @@ import Question from './question';
 import AddAnswer from './add-answer';
 
 const AnswerList = (props) => {
+  const [loading,setLoading] = useState(false);
   const [ansNo, setAnsNo] = useContext(AnswerContext);
   const question = props.question;
   const [answersList, setAnsList] = useState([]);
 
+  const overHead = css`
+  height: 35vh;
+  display: block;
+  margin: 30vh auto 10vh auto;
+  grid-column: 1/4;
+`;
+
   useEffect(() => {
+    setLoading(true);
     axios({
       method: "get",
       url: `https://karuna-go.herokuapp.com/answers/${question._id}`,
@@ -22,6 +33,7 @@ const AnswerList = (props) => {
       .then((res) => {
         console.log(res.data, question._id);
         setAnsList(res.data);
+        setLoading(false);
       })
       .catch((err) => console.error(err));
   }, [ansNo]);

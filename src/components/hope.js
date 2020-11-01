@@ -227,7 +227,7 @@ const Hope = () => {
   
   <div >
     <h2 className="heading">Ayush Kwath</h2>
-   <div className="imgbox item-inverse">
+   <div className="imgbox">
       <img src={ayushKwath} alt="ayush_kwath"/>
     
     <p>The ministry suggested drinking 1 cup or 150 ml of Ayush Kwath every day. It is a combination of medicinal herbs like four parts Tulsi (holy basil), two parts Dalchini (cinnamon), two parts Sunthi (ginger root) and one part Krishna Marich
@@ -254,7 +254,7 @@ const Hope = () => {
   <div >
     <h2 className="heading">Ashwagandha</h2>
     
-    <div className="imgbox item-inverse">
+    <div className="imgbox">
       <img src={aswagandha} alt="ashwagandha"/>
     <p>The ministry has also advised taking 1-3 grams of ashwagandha powder twice daily for 15 days. Ashwagandha is an ancient medicinal herb that provides a range of health benefits to the body. Recovering from diseases like COVID-19 can be very
       stressful for the body and mind. Ashwagandha is effective in reducing stress and cortisol levels, promoting brain function, strengthening immunity and bringing down blood sugar levels. It also helps combat symptoms of anxiety and depression.
@@ -277,7 +277,7 @@ const Hope = () => {
   
   <div >
     <h2 className="heading">Mulethi powder</h2>
-    <div className="imgbox item-inverse">
+    <div className="imgbox">
       <img src={mulethi} alt="meluthi"/>
     
     <p>Mulethi powder is another ancient medicinal herb prescribed by the health ministry to people who have a dry cough. The dosage recommended is 1-3 grams of mulethi powder twice every day with lukewarm water. Mulethi or liquorice is useful in
@@ -301,7 +301,7 @@ const Hope = () => {
   
   <div >
     <h2 className="heading">Warm Turmeric milk</h2>
-    <div className="imgbox item-inverse">
+    <div className="imgbox">
       <img src={turmeric} alt="turmeric"/>
     
     <p>The next suggestion by the ministry is to drink warm milk with ½ tsp Turmeric every morning and evening. Turmeric milk has therapeutic properties that help the body in recovering from a disease or injury quickly. Haldi doodh is useful in
@@ -353,9 +353,7 @@ const Hope = () => {
 
     </h2>
     <p>The prolonged use of medical masks can be uncomfortable. However, it does not lead to CO2 intoxication nor oxygen deficiency. While wearing a medical mask, make sure it fits properly and that it is tight enough to allow you to breathe
-      normally. Do not re-use a disposable mask and always change it as soon as it gets damp.
-
-      * Medical masks (also known as surgical masks) are flat or pleated; they are affixed to the head with straps or have ear loops.</p>
+      normally. Do not re-use a disposable mask and always change it as soon as it gets damp.</p>
 
     <h2 className="heading">FACT: Most people who get COVID-19 recover from it</h2>
     <p>Most people who get COVID-19 have mild or moderate symptoms and can recover thanks to supportive care. If you have a cough, fever and difficulty breathing seek medical care early - call your health facility by telephone first. If you have
